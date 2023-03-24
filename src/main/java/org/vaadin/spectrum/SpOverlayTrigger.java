@@ -1,6 +1,12 @@
 package org.vaadin.spectrum;
 
-import com.vaadin.flow.component.*;
+import com.vaadin.flow.component.Component;
+import com.vaadin.flow.component.ComponentEvent;
+import com.vaadin.flow.component.ComponentEventListener;
+import com.vaadin.flow.component.DomEvent;
+import com.vaadin.flow.component.PropertyDescriptor;
+import com.vaadin.flow.component.PropertyDescriptors;
+import com.vaadin.flow.component.Tag;
 import com.vaadin.flow.component.dependency.JsModule;
 import com.vaadin.flow.component.dependency.NpmPackage;
 import com.vaadin.flow.component.shared.SlotUtils;
@@ -11,8 +17,7 @@ import org.vaadin.spectrum.properties.HasDisabledFluent;
 @Tag("overlay-trigger")
 @NpmPackage(value = "@spectrum-web-components/overlay", version = "0.19.1")
 @JsModule("@spectrum-web-components/overlay/overlay-trigger.js")
-public class SpOverlayTrigger extends Component implements HasDirFluent<SpOverlayTrigger>, HasDisabledFluent<SpOverlayTrigger>,
-    ComponentEventListener<SpDialog.SpDialogCloseEvent> {
+public class SpOverlayTrigger extends Component implements HasDirFluent<SpOverlayTrigger>, HasDisabledFluent<SpOverlayTrigger> {
 
     public enum Placement { AUTO, AUTO_START, AUTO_END, TOP, BOTTOM, RIGHT, LEFT, TOP_START, TOP_END, BOTTOM_START, BOTTOM_END, RIGHT_START, RIGHT_END, LEFT_START, LEFT_END, NONE }
 
@@ -126,11 +131,6 @@ public class SpOverlayTrigger extends Component implements HasDirFluent<SpOverla
 
     public void close() {
         this.setOpen("false");
-    }
-
-    @Override
-    public void onComponentEvent(SpDialog.SpDialogCloseEvent event) {
-        close();
     }
 
 }

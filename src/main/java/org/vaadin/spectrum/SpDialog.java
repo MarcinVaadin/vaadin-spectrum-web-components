@@ -1,16 +1,20 @@
 package org.vaadin.spectrum;
 
-import com.vaadin.flow.component.*;
+import com.vaadin.flow.component.Component;
+import com.vaadin.flow.component.ComponentEvent;
+import com.vaadin.flow.component.ComponentEventListener;
+import com.vaadin.flow.component.DomEvent;
+import com.vaadin.flow.component.HtmlContainer;
+import com.vaadin.flow.component.PropertyDescriptor;
+import com.vaadin.flow.component.PropertyDescriptors;
+import com.vaadin.flow.component.Tag;
 import com.vaadin.flow.component.dependency.JsModule;
 import com.vaadin.flow.component.dependency.NpmPackage;
 import com.vaadin.flow.component.html.H2;
 import com.vaadin.flow.component.shared.SlotUtils;
-import com.vaadin.flow.dom.Element;
 import com.vaadin.flow.shared.Registration;
 import org.vaadin.spectrum.properties.HasDirFluent;
 import org.vaadin.spectrum.properties.HasSizeFluent;
-
-import java.util.stream.Stream;
 
 @Tag("sp-dialog")
 @NpmPackage(value = "@spectrum-web-components/dialog", version = "0.11.12")

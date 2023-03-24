@@ -1,8 +1,12 @@
 package org.vaadin.spectrum;
 
-import com.vaadin.flow.component.*;
+import com.vaadin.flow.component.Component;
+import com.vaadin.flow.component.PropertyDescriptor;
+import com.vaadin.flow.component.PropertyDescriptors;
+import com.vaadin.flow.component.Tag;
 import com.vaadin.flow.component.dependency.JsModule;
 import com.vaadin.flow.component.dependency.NpmPackage;
+import com.vaadin.flow.component.shared.SlotUtils;
 import org.vaadin.spectrum.properties.HasDirFluent;
 import org.vaadin.spectrum.properties.HasTextFluent;
 
@@ -86,6 +90,15 @@ public class SpTooltip extends Component implements HasDirFluent<SpTooltip>, Has
         return this;
     }
 
-    // TODO icon
+    public SpTooltip setVariant(Variant _variant) {
+        assert _variant != null;
+        this.setVariant(_variant.name().toLowerCase());
+        return this;
+    }
+
+    public SpTooltip setIcon(SpIcon icon) {
+        SlotUtils.setSlot(this, "icon", icon);
+        return this;
+    }
 
 }

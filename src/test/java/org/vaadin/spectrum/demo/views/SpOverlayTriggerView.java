@@ -2,7 +2,12 @@ package org.vaadin.spectrum.demo.views;
 
 import com.vaadin.flow.component.html.Span;
 import com.vaadin.flow.router.Route;
-import org.vaadin.spectrum.*;
+import org.vaadin.spectrum.SpButton;
+import org.vaadin.spectrum.SpDialog;
+import org.vaadin.spectrum.SpDivider;
+import org.vaadin.spectrum.SpHtml;
+import org.vaadin.spectrum.SpOverlayTrigger;
+import org.vaadin.spectrum.SpTooltip;
 import org.vaadin.spectrum.demo.DemoLayout;
 import org.vaadin.spectrum.demo.DemoView;
 import org.vaadin.spectrum.properties.HasSizeFluent;
@@ -34,7 +39,6 @@ public class SpOverlayTriggerView extends DemoView {
         overlayTrigger.setTrigger(openButton);
         overlayTrigger.setHoverContent(new SpTooltip().setText("Click me to open!"));
 
-        dialog.addCloseEventListener(overlayTrigger);
         okButton.addClickListener(ev -> overlayTrigger.close());
         cancelButton.addClickListener(ev -> overlayTrigger.close());
 

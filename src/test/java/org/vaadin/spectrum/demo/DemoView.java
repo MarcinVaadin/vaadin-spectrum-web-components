@@ -1,11 +1,13 @@
 package org.vaadin.spectrum.demo;
 
+import com.vaadin.flow.component.Component;
 import com.vaadin.flow.component.Tag;
 import com.vaadin.flow.component.dependency.NpmPackage;
 import com.vaadin.flow.component.html.Div;
 import com.vaadin.flow.component.html.H2;
 import com.vaadin.flow.component.html.Paragraph;
 import com.vaadin.flow.component.html.Span;
+import com.vaadin.flow.component.orderedlayout.HorizontalLayout;
 import org.vaadin.spectrum.SpDivider;
 import org.vaadin.spectrum.SpHtml;
 import org.vaadin.spectrum.SpLink;
@@ -26,6 +28,20 @@ public class DemoView extends Div {
         String url = "https://opensource.adobe.com/spectrum-web-components/components/" + title.getText().substring(3);
         add(new Paragraph(new SpLink(url, url)));
         add(new SpDivider().setSize(HasSizeFluent.Size.M));
+    }
+
+    protected Component wrapHorizontal(Component... components) {
+        HorizontalLayout wrapper = new HorizontalLayout();
+        wrapper.getStyle().set("margin-top", "14px");
+        wrapper.add(components);
+        return wrapper;
+    }
+
+    protected void sectionDivider(String title) {
+        add(SpHtml.header().text(title).asH3());
+        SpDivider divider = new SpDivider().setSize(HasSizeFluent.Size.S);
+        divider.getElement().getStyle().set("margin-bottom", "14px");
+        add(divider);
     }
 
 }
