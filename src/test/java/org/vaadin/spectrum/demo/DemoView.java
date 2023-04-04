@@ -7,6 +7,7 @@ import com.vaadin.flow.component.html.Div;
 import com.vaadin.flow.component.html.H2;
 import com.vaadin.flow.component.html.Paragraph;
 import com.vaadin.flow.component.html.Span;
+import com.vaadin.flow.component.orderedlayout.FlexComponent;
 import com.vaadin.flow.component.orderedlayout.HorizontalLayout;
 import org.vaadin.spectrum.SpDivider;
 import org.vaadin.spectrum.SpHtml;
@@ -30,10 +31,11 @@ public class DemoView extends Div {
         add(new SpDivider().setSize(HasSizeFluent.Size.M));
     }
 
-    protected Component wrapHorizontal(Component... components) {
+    protected HorizontalLayout wrapHorizontal(Component... components) {
         HorizontalLayout wrapper = new HorizontalLayout();
         wrapper.getStyle().set("margin-top", "14px");
         wrapper.add(components);
+        wrapper.setAlignItems(FlexComponent.Alignment.CENTER);
         return wrapper;
     }
 
