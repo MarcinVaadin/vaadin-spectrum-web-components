@@ -10,6 +10,7 @@ import org.vaadin.spectrum.SpTooltip;
 import org.vaadin.spectrum.demo.DemoLayout;
 import org.vaadin.spectrum.demo.DemoView;
 import org.vaadin.spectrum.properties.HasSizeFluent;
+import org.vaadin.spectrum.utils.Placement;
 
 @Route(value = "sp-tooltip", layout = DemoLayout.class)
 public class SpTooltipView extends DemoView {
@@ -31,10 +32,10 @@ public class SpTooltipView extends DemoView {
         add(new SpDivider().setSize(HasSizeFluent.Size.S));
         p1 = new HorizontalLayout();
         p1.getStyle().set("margin-top", "14px");
-        p1.add(new SpTooltip().setText("top").setOpen(true).setPlacement(SpTooltip.Placement.TOP));
-        p1.add(new SpTooltip().setText("right").setOpen(true).setPlacement(SpTooltip.Placement.RIGHT));
-        p1.add(new SpTooltip().setText("bottom").setOpen(true).setPlacement(SpTooltip.Placement.BOTTOM));
-        p1.add(new SpTooltip().setText("left").setOpen(true).setPlacement(SpTooltip.Placement.LEFT));
+        p1.add(new SpTooltip().setText("top").setOpen(true).setPlacement(Placement.TOP));
+        p1.add(new SpTooltip().setText("right").setOpen(true).setPlacement(Placement.RIGHT));
+        p1.add(new SpTooltip().setText("bottom").setOpen(true).setPlacement(Placement.BOTTOM));
+        p1.add(new SpTooltip().setText("left").setOpen(true).setPlacement(Placement.LEFT));
         add(p1);
 
         add(SpHtml.header().text("With icon").asH3());
@@ -42,9 +43,9 @@ public class SpTooltipView extends DemoView {
         add(new SpIconsMedium());
         p1 = new HorizontalLayout();
         p1.getStyle().set("margin-top", "14px");
-        p1.add(new SpTooltip().setText("info").setVariant(SpTooltip.Variant.INFO).setOpen(true).setPlacement(SpTooltip.Placement.TOP).setIcon(new SpIcon().setName("ui:Arrow100")));
-        p1.add(new SpTooltip().setText("error").setVariant(SpTooltip.Variant.NEGATIVE).setOpen(true).setPlacement(SpTooltip.Placement.TOP).setIcon(new SpIcon().setName("ui:Arrow100")));
-        p1.add(new SpTooltip().setText("success").setVariant(SpTooltip.Variant.POSITIVE).setOpen(true).setPlacement(SpTooltip.Placement.TOP).setIcon(new SpIcon().setName("ui:Arrow100")));
+        p1.add(new SpTooltip().setText("info").setVariant(SpTooltip.Variant.INFO).setOpen(true).setPlacement(Placement.TOP).setIcon(new SpIcon().setName("ui:Arrow100")));
+        p1.add(new SpTooltip().setText("error").setVariant(SpTooltip.Variant.NEGATIVE).setOpen(true).setPlacement(Placement.TOP).setIcon(new SpIcon().setName("ui:Arrow100")));
+        p1.add(new SpTooltip().setText("success").setVariant(SpTooltip.Variant.POSITIVE).setOpen(true).setPlacement(Placement.TOP).setIcon(new SpIcon().setName("ui:Arrow100")));
         add(p1);
     }
 

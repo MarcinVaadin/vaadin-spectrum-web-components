@@ -18,7 +18,8 @@ public class DemoView extends Div {
 
     public DemoView(Class<?> clazz) {
         setWidthFull();
-        Span title = new Span(clazz.getAnnotation(Tag.class).value());
+        Span title = new Span(clazz.getName());
+        String tag = clazz.getAnnotation(Tag.class).value();
         Span version = new Span("v" + clazz.getAnnotation(NpmPackage.class).version());
         version.getClassNames().add("spectrum-Heading--sizeM");
         version.getStyle().set("margin-left", "20px");
@@ -26,14 +27,14 @@ public class DemoView extends Div {
         header.getStyle().set("display", "flex").set("align-items", "baseline").set("justify-content", "space-between");
         add(header);
         add(new SpDivider().setSize(HasSizeFluent.Size.L));
-        String url = "https://opensource.adobe.com/spectrum-web-components/components/" + title.getText().substring(3);
+        String url = "https://opensource.adobe.com/spectrum-web-components/components/" + tag.substring(3);
         add(new Paragraph(new SpLink(url, url)));
         add(new SpDivider().setSize(HasSizeFluent.Size.M));
     }
 
     protected HorizontalLayout wrapHorizontal(Component... components) {
         HorizontalLayout wrapper = new HorizontalLayout();
-        wrapper.getStyle().set("margin-top", "14px");
+        wrapper.getStyle().set("padding", "14px").set("background-color", "#eee");
         wrapper.add(components);
         wrapper.setAlignItems(FlexComponent.Alignment.CENTER);
         return wrapper;

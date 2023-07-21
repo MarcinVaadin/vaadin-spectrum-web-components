@@ -9,13 +9,12 @@ import com.vaadin.flow.component.dependency.NpmPackage;
 import com.vaadin.flow.component.shared.SlotUtils;
 import org.vaadin.spectrum.properties.HasDirFluent;
 import org.vaadin.spectrum.properties.HasTextFluent;
+import org.vaadin.spectrum.utils.Placement;
 
 @Tag("sp-tooltip")
 @NpmPackage(value = "@spectrum-web-components/tooltip", version = "0.11.13")
 @JsModule("@spectrum-web-components/tooltip/sp-tooltip.js")
 public class SpTooltip extends Component implements HasDirFluent<SpTooltip>, HasTextFluent<SpTooltip> {
-
-    public enum Placement { AUTO, AUTO_START, AUTO_END, TOP, BOTTOM, RIGHT, LEFT, TOP_START, TOP_END, BOTTOM_START, BOTTOM_END, RIGHT_START, RIGHT_END, LEFT_START, LEFT_END, NONE }
 
     public enum Variant { INFO, POSITIVE, NEGATIVE }
 

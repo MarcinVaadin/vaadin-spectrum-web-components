@@ -13,13 +13,12 @@ import com.vaadin.flow.component.shared.SlotUtils;
 import com.vaadin.flow.shared.Registration;
 import org.vaadin.spectrum.properties.HasDirFluent;
 import org.vaadin.spectrum.properties.HasDisabledFluent;
+import org.vaadin.spectrum.utils.Placement;
 
 @Tag("overlay-trigger")
 @NpmPackage(value = "@spectrum-web-components/overlay", version = "0.19.1")
 @JsModule("@spectrum-web-components/overlay/overlay-trigger.js")
 public class SpOverlayTrigger extends Component implements HasDirFluent<SpOverlayTrigger>, HasDisabledFluent<SpOverlayTrigger> {
-
-    public enum Placement { AUTO, AUTO_START, AUTO_END, TOP, BOTTOM, RIGHT, LEFT, TOP_START, TOP_END, BOTTOM_START, BOTTOM_END, RIGHT_START, RIGHT_END, LEFT_START, LEFT_END, NONE }
 
     public enum Type { INLINE, REPLACE, MODAL }
 
@@ -51,7 +50,7 @@ public class SpOverlayTrigger extends Component implements HasDirFluent<SpOverla
 
     // ----- placement -----
     private static final PropertyDescriptor<String, String> placementProperty =
-            PropertyDescriptors.propertyWithDefault("placement", Placement.BOTTOM.name().toLowerCase());
+            PropertyDescriptors.propertyWithDefault("placement", Placement.BOTTOM.toString());
 
     public SpOverlayTrigger setPlacement(String _placement) {
         placementProperty.set(this, _placement);
@@ -77,7 +76,7 @@ public class SpOverlayTrigger extends Component implements HasDirFluent<SpOverla
 
     public SpOverlayTrigger setPlacement(Placement _placement) {
         assert _placement != null;
-        this.setPlacement(_placement.name().toLowerCase());
+        this.setPlacement(_placement.toString());
         return this;
     }
 

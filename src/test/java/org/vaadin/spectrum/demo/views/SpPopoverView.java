@@ -7,6 +7,7 @@ import org.vaadin.spectrum.SpHtml;
 import org.vaadin.spectrum.SpPopover;
 import org.vaadin.spectrum.demo.DemoLayout;
 import org.vaadin.spectrum.demo.DemoView;
+import org.vaadin.spectrum.utils.Placement;
 
 @Route(value = "sp-popover", layout = DemoLayout.class)
 public class SpPopoverView extends DemoView {
@@ -59,7 +60,7 @@ public class SpPopoverView extends DemoView {
         popover3.setDialog(true);
         popover3.setTip(true);
         popover3.setOpen(true);
-        popover3.setPlacement(SpPopover.Placement.LEFT);
+        popover3.setPlacement(Placement.LEFT);
         div.add(popover3);
         add(div);
 

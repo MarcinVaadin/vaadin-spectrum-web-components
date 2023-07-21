@@ -4,9 +4,9 @@ import com.vaadin.flow.component.*;
 import com.vaadin.flow.component.dependency.JsModule;
 import com.vaadin.flow.component.dependency.NpmPackage;
 import com.vaadin.flow.component.shared.SlotUtils;
-import org.vaadin.spectrum.properties.HasIconSlot;
 import org.vaadin.spectrum.properties.HasSizeFluent;
 import org.vaadin.spectrum.properties.HasTextFluent;
+import org.vaadin.spectrum.slots.HasIconSlot;
 
 //@Tag("sp-action-button")
 //@NpmPackage(value = "@spectrum-web-components/action-button", version = "0.10.14")

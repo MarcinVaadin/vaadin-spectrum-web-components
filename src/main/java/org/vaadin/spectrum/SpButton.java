@@ -98,6 +98,14 @@ public class SpButton extends Component implements ClickNotifier<SpButton>,
     }
     // -----------------
 
+    public SpButton() {
+
+    }
+
+    public SpButton(String text) {
+        setText(text);
+    }
+
     public SpButton setVariant(Variant variant) {
         assert variant != null;
         this.setVariant(variant.name().toLowerCase());

@@ -54,7 +54,7 @@ public class SpButtonView extends DemoView {
     }
 
     private SpButton buildButton(String text, HasSizeFluent.Size size) {
-        SpButton button = new SpButton().setText(text).setSize(size);
+        SpButton button = new SpButton(text).setSize(size);
         button.addClickListener(ev -> status.setText(ev.getSource().getText() + " clicked"));
         button.getStyle().set("margin-right", "10px");
         return button;

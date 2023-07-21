@@ -4,10 +4,10 @@ import com.vaadin.flow.component.*;
 import com.vaadin.flow.component.dependency.JsModule;
 import com.vaadin.flow.component.dependency.NpmPackage;
 import org.vaadin.spectrum.properties.HasDirFluent;
-import org.vaadin.spectrum.properties.HasIconSlot;
 import org.vaadin.spectrum.properties.HasSizeFluent;
 import org.vaadin.spectrum.properties.HasTextFluent;
 import org.vaadin.spectrum.properties.HasVariantFluent;
+import org.vaadin.spectrum.slots.HasIconSlot;
 
 @Tag("sp-badge")
 @NpmPackage(value = "@spectrum-web-components/badge", version = "0.4.5")

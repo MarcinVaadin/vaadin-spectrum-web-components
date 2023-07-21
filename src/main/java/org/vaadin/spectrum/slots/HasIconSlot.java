@@ -1,4 +1,4 @@
-package org.vaadin.spectrum.properties;
+package org.vaadin.spectrum.slots;
 
 import com.vaadin.flow.component.HasElement;
 import com.vaadin.flow.component.shared.SlotUtils;
