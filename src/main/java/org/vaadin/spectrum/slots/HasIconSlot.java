@@ -1,12 +1,12 @@
 package org.vaadin.spectrum.slots;
 
+import com.vaadin.flow.component.Component;
 import com.vaadin.flow.component.HasElement;
-import com.vaadin.flow.component.shared.SlotUtils;
-import org.vaadin.spectrum.SpIcon;
+import org.vaadin.spectrum.utils.SlotUtils;
 
 public interface HasIconSlot<T> extends HasElement {
 
-    default T setIcon(SpIcon icon) {
+    default T setIcon(Component icon) {
         SlotUtils.setSlot(this, "icon", icon);
         return (T) this;
     }

@@ -1,8 +1,8 @@
 package org.vaadin.spectrum.slots;
 
 import com.vaadin.flow.component.HasElement;
-import com.vaadin.flow.component.shared.SlotUtils;
 import org.vaadin.spectrum.SpIcon;
+import org.vaadin.spectrum.utils.SlotUtils;
 
 public interface HasLabelSlot<T> extends HasElement {
 

@@ -1,18 +1,13 @@
 package org.vaadin.spectrum;
 
-import com.vaadin.flow.component.ClickNotifier;
-import com.vaadin.flow.component.Component;
-import com.vaadin.flow.component.PropertyDescriptor;
-import com.vaadin.flow.component.PropertyDescriptors;
-import com.vaadin.flow.component.Synchronize;
-import com.vaadin.flow.component.Tag;
+import com.vaadin.flow.component.*;
 import com.vaadin.flow.component.dependency.JsModule;
 import com.vaadin.flow.component.dependency.NpmPackage;
 import org.vaadin.spectrum.properties.HasSizeFluent;
 import org.vaadin.spectrum.properties.HasTextFluent;
 
 @Tag("sp-checkbox")
-@NpmPackage(value = "@spectrum-web-components/checkbox", version = "0.14.12")
+@NpmPackage(value = "@spectrum-web-components/checkbox", version = SpConstants.VERSION)
 @JsModule("@spectrum-web-components/checkbox/sp-checkbox.js")
 public class SpCheckbox extends Component implements HasTextFluent<SpCheckbox>,
         HasSizeFluent<SpCheckbox>, ClickNotifier<SpCheckbox> {

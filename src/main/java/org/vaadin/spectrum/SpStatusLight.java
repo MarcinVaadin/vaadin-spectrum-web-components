@@ -11,7 +11,7 @@ import org.vaadin.spectrum.properties.HasSizeFluent;
 import org.vaadin.spectrum.properties.HasTextFluent;
 
 @Tag("sp-status-light")
-@NpmPackage(value = "@spectrum-web-components/status-light", version = "0.11.7")
+@NpmPackage(value = "@spectrum-web-components/status-light", version = SpConstants.VERSION)
 @JsModule("@spectrum-web-components/status-light/sp-status-light.js")
 public class SpStatusLight extends Component implements HasSizeFluent<SpStatusLight>,
         HasDisabledFluent<SpStatusLight>, HasTextFluent<SpStatusLight> {

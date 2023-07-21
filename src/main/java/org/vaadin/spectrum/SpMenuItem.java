@@ -10,7 +10,7 @@ import org.vaadin.spectrum.properties.HasDisabledFluent;
 import org.vaadin.spectrum.properties.HasTextFluent;
 
 @Tag("sp-menu-item")
-@NpmPackage(value = "@spectrum-web-components/menu", version = "0.16.13")
+@NpmPackage(value = "@spectrum-web-components/menu", version = SpConstants.VERSION)
 @JsModule("@spectrum-web-components/menu/sp-menu-item.js")
 public class SpMenuItem extends Component implements HasTextFluent<SpMenuItem>, HasDisabledFluent<SpMenuItem> {
 

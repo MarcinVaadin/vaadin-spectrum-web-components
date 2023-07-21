@@ -1,22 +1,16 @@
 package org.vaadin.spectrum;
 
-import com.vaadin.flow.component.Component;
-import com.vaadin.flow.component.ComponentEvent;
-import com.vaadin.flow.component.ComponentEventListener;
-import com.vaadin.flow.component.DomEvent;
-import com.vaadin.flow.component.PropertyDescriptor;
-import com.vaadin.flow.component.PropertyDescriptors;
-import com.vaadin.flow.component.Tag;
+import com.vaadin.flow.component.*;
 import com.vaadin.flow.component.dependency.JsModule;
 import com.vaadin.flow.component.dependency.NpmPackage;
-import com.vaadin.flow.component.shared.SlotUtils;
 import com.vaadin.flow.shared.Registration;
 import org.vaadin.spectrum.properties.HasDirFluent;
 import org.vaadin.spectrum.properties.HasDisabledFluent;
 import org.vaadin.spectrum.utils.Placement;
+import org.vaadin.spectrum.utils.SlotUtils;
 
 @Tag("overlay-trigger")
-@NpmPackage(value = "@spectrum-web-components/overlay", version = "0.19.1")
+@NpmPackage(value = "@spectrum-web-components/overlay", version = SpConstants.VERSION)
 @JsModule("@spectrum-web-components/overlay/overlay-trigger.js")
 public class SpOverlayTrigger extends Component implements HasDirFluent<SpOverlayTrigger>, HasDisabledFluent<SpOverlayTrigger> {
 

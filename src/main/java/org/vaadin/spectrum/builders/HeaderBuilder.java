@@ -2,7 +2,6 @@ package org.vaadin.spectrum.builders;
 
 import com.vaadin.flow.component.Component;
 import com.vaadin.flow.component.HtmlContainer;
-import com.vaadin.flow.component.html.*;
 import org.vaadin.spectrum.SpConstants;
 import org.vaadin.spectrum.properties.HasSizeFluent;
 
@@ -38,28 +37,26 @@ public class HeaderBuilder {
         return this;
     }
 
-    public H1 asH1() {
-        return applyStyles(new H1(), HasSizeFluent.Size.XXL);
+    public Component asH1() {
+        return applyStyles(new HtmlContainer("h1"), HasSizeFluent.Size.XXL);
     }
 
-    public H2 asH2() {
-        return applyStyles(new H2(), HasSizeFluent.Size.XL);
+    public Component asH2() { return applyStyles(new HtmlContainer("h2"), HasSizeFluent.Size.XL); }
+
+    public Component asH3() {
+        return applyStyles(new HtmlContainer("h3"), HasSizeFluent.Size.L);
     }
 
-    public H3 asH3() {
-        return applyStyles(new H3(), HasSizeFluent.Size.L);
+    public Component asH4() {
+        return applyStyles(new HtmlContainer("h4"), HasSizeFluent.Size.M);
     }
 
-    public H4 asH4() {
-        return applyStyles(new H4(), HasSizeFluent.Size.M);
+    public Component asH5() {
+        return applyStyles(new HtmlContainer("h5"), HasSizeFluent.Size.S);
     }
 
-    public H5 asH5() {
-        return applyStyles(new H5(), HasSizeFluent.Size.S);
-    }
-
-    public H6 asH6() {
-        return applyStyles(new H6(), HasSizeFluent.Size.XS);
+    public Component asH6() {
+        return applyStyles(new HtmlContainer("h6"), HasSizeFluent.Size.XS);
     }
 
     private <T extends HtmlContainer> T applyStyles(T el, HasSizeFluent.Size defaultSize) {

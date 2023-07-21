@@ -10,7 +10,7 @@ import org.vaadin.spectrum.properties.HasDirFluent;
 import org.vaadin.spectrum.properties.HasLabelFluent;
 
 @Tag("sp-menu")
-@NpmPackage(value = "@spectrum-web-components/menu", version = "0.16.13")
+@NpmPackage(value = "@spectrum-web-components/menu", version = SpConstants.VERSION)
 @JsModule("@spectrum-web-components/menu/sp-menu.js")
 public class SpMenu extends HtmlContainer implements HasDirFluent<SpMenu>, HasLabelFluent<SpMenu> {
 

@@ -1,17 +1,17 @@
 package org.vaadin.spectrum;
 
+import com.vaadin.flow.component.HtmlContainer;
 import com.vaadin.flow.component.PropertyDescriptor;
 import com.vaadin.flow.component.PropertyDescriptors;
 import com.vaadin.flow.component.Tag;
 import com.vaadin.flow.component.dependency.JsModule;
 import com.vaadin.flow.component.dependency.NpmPackage;
-import com.vaadin.flow.component.html.Anchor;
 import org.vaadin.spectrum.properties.HasVariantFluent;
 
 @Tag("sp-link")
-@NpmPackage(value = "@spectrum-web-components/link", version = "0.14.4")
+@NpmPackage(value = "@spectrum-web-components/link", version = SpConstants.VERSION)
 @JsModule("@spectrum-web-components/link/sp-link.js")
-public class SpLink extends Anchor implements HasVariantFluent<SpLink> {
+public class SpLink extends HtmlContainer implements HasVariantFluent<SpLink> {
 
     public enum Variant { SECONDARY };
 
@@ -45,10 +45,13 @@ public class SpLink extends Anchor implements HasVariantFluent<SpLink> {
 
 
     public SpLink() {
+        super("a");
     }
 
     public SpLink(String href, String text) {
-        super(href, text);
+        super("a");
+        getElement().setAttribute("href", href);
+        setText(text);
     }
 
     public SpLink setVariant(Variant variant) {

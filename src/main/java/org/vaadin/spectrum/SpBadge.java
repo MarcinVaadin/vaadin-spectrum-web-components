@@ -1,6 +1,9 @@
 package org.vaadin.spectrum;
 
-import com.vaadin.flow.component.*;
+import com.vaadin.flow.component.Component;
+import com.vaadin.flow.component.PropertyDescriptor;
+import com.vaadin.flow.component.PropertyDescriptors;
+import com.vaadin.flow.component.Tag;
 import com.vaadin.flow.component.dependency.JsModule;
 import com.vaadin.flow.component.dependency.NpmPackage;
 import org.vaadin.spectrum.properties.HasDirFluent;
@@ -10,7 +13,7 @@ import org.vaadin.spectrum.properties.HasVariantFluent;
 import org.vaadin.spectrum.slots.HasIconSlot;
 
 @Tag("sp-badge")
-@NpmPackage(value = "@spectrum-web-components/badge", version = "0.4.5")
+@NpmPackage(value = "@spectrum-web-components/badge", version = SpConstants.VERSION)
 @JsModule("@spectrum-web-components/badge/sp-badge.js")
 public class SpBadge extends Component implements HasDirFluent<SpBadge>,
         HasVariantFluent<SpBadge>, HasIconSlot<SpBadge>, HasTextFluent<SpBadge>,

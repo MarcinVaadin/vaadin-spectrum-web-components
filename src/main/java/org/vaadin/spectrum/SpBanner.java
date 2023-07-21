@@ -3,13 +3,13 @@ package org.vaadin.spectrum;
 import com.vaadin.flow.component.*;
 import com.vaadin.flow.component.dependency.JsModule;
 import com.vaadin.flow.component.dependency.NpmPackage;
-import com.vaadin.flow.component.html.Span;
 import org.vaadin.spectrum.properties.HasDirFluent;
 import org.vaadin.spectrum.slots.HasContentSlot;
 import org.vaadin.spectrum.slots.HasHeaderSlot;
+import org.vaadin.spectrum.utils.ComponentUtils;
 
 @Tag("sp-banner")
-@NpmPackage(value = "@spectrum-web-components/banner", version = "0.9.5")
+@NpmPackage(value = "@spectrum-web-components/banner", version = SpConstants.VERSION)
 @JsModule("@spectrum-web-components/banner/sp-banner.js")
 public class SpBanner extends Component implements HasDirFluent, HasHeaderSlot,
         HasContentSlot {
@@ -47,8 +47,8 @@ public class SpBanner extends Component implements HasDirFluent, HasHeaderSlot,
     }
 
     public SpBanner(String header, String content) {
-        setHeader(new Span(header));
-        setContent(new Span(content));
+        setHeader(ComponentUtils.divWrap(header));
+        setContent(ComponentUtils.divWrap(content));
     }
 
     public SpBanner setType(Type _type) {

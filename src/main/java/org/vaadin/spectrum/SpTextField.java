@@ -7,7 +7,7 @@ import com.vaadin.flow.component.dependency.JsModule;
 import com.vaadin.flow.component.dependency.NpmPackage;
 
 @Tag("sp-textfield")
-@NpmPackage(value = "@spectrum-web-components/textfield", version = "0.13.11")
+@NpmPackage(value = "@spectrum-web-components/textfield", version = SpConstants.VERSION)
 @JsModule("@spectrum-web-components/textfield/sp-textfield.js")
 public class SpTextField extends AbstractSinglePropertyField<SpTextField, String> {
     public SpTextField() {

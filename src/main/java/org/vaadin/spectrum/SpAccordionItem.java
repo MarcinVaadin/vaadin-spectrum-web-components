@@ -8,7 +8,7 @@ import org.vaadin.spectrum.properties.HasDisabledFluent;
 import org.vaadin.spectrum.properties.HasLabelFluent;
 
 @Tag("sp-accordion-item")
-@NpmPackage(value = "@spectrum-web-components/accordion", version = "0.7.9")
+@NpmPackage(value = "@spectrum-web-components/accordion", version = SpConstants.VERSION)
 @JsModule("@spectrum-web-components/accordion/sp-accordion-item.js")
 public class SpAccordionItem extends Component implements HasComponents, HasLabelFluent<SpAccordionItem>, HasDisabledFluent<SpAccordionItem> {
 

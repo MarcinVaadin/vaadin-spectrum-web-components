@@ -10,7 +10,7 @@ import org.vaadin.spectrum.properties.HasDirFluent;
 import org.vaadin.spectrum.properties.HasSizeFluent;
 
 @Tag("sp-divider")
-@NpmPackage(value = "@spectrum-web-components/divider", version = "0.6.6")
+@NpmPackage(value = "@spectrum-web-components/divider", version = SpConstants.VERSION)
 @JsModule("@spectrum-web-components/divider/sp-divider.js")
 public class SpDivider extends Component implements HasDirFluent<SpDivider>,
         HasSizeFluent<SpDivider> {

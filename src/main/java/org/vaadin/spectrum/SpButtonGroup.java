@@ -10,7 +10,7 @@ import org.vaadin.spectrum.properties.HasDirFluent;
 import org.vaadin.spectrum.properties.HasSizeFluent;
 
 @Tag("sp-button-group")
-@NpmPackage(value = "@spectrum-web-components/button-group", version = "0.10.7")
+@NpmPackage(value = "@spectrum-web-components/button-group", version = SpConstants.VERSION)
 @JsModule("@spectrum-web-components/button-group/sp-button-group.js")
 public class SpButtonGroup extends HtmlContainer implements HasDirFluent<SpButtonGroup>, HasSizeFluent<SpButtonGroup> {
 

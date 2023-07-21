@@ -10,9 +10,9 @@ import org.vaadin.spectrum.slots.HasLabelSlot;
 import org.vaadin.spectrum.slots.HasMenuItems;
 import org.vaadin.spectrum.utils.Placement;
 
-//@Tag("sp-action-menu")
-//@NpmPackage(value = "@spectrum-web-components/action-menu", version = "0.16.0")
-//@JsModule("@spectrum-web-components/action-menu/sp-action-menu.js")
+@Tag("sp-action-menu")
+@NpmPackage(value = "@spectrum-web-components/action-menu", version = SpConstants.VERSION)
+@JsModule("@spectrum-web-components/action-menu/sp-action-menu.js")
 public class SpActionMenu extends AbstractSinglePropertyField<SpActionMenu, String> implements HasDisabledFluent<SpActionMenu>,
         HasLabelFluent<SpActionMenu>, HasIconSlot, HasLabelSlot, HasMenuItems<SpActionMenu> {
 

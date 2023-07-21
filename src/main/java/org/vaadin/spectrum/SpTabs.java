@@ -8,7 +8,7 @@ import org.vaadin.spectrum.properties.HasLabelFluent;
 import java.util.UUID;
 
 @Tag("sp-tabs")
-@NpmPackage(value = "@spectrum-web-components/tabs", version = "0.10.7")
+@NpmPackage(value = "@spectrum-web-components/tabs", version = SpConstants.VERSION)
 @JsModule("@spectrum-web-components/tabs/sp-tabs.js")
 public class SpTabs extends Component implements HasComponents, HasSize, HasLabelFluent<SpTabs> {
 

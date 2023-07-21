@@ -9,7 +9,7 @@ import com.vaadin.flow.component.dependency.NpmPackage;
 import org.vaadin.spectrum.properties.HasDirFluent;
 
 @Tag("sp-underlay")
-@NpmPackage(value = "@spectrum-web-components/underlay", version = "0.9.6")
+@NpmPackage(value = "@spectrum-web-components/underlay", version = SpConstants.VERSION)
 @JsModule("@spectrum-web-components/underlay/sp-underlay.js")
 public class SpUnderlay extends Component implements HasDirFluent<SpUnderlay> {
 

@@ -5,7 +5,7 @@ import com.vaadin.flow.component.dependency.JsModule;
 import com.vaadin.flow.component.dependency.NpmPackage;
 
 @Tag("sp-tab-panel")
-@NpmPackage(value = "@spectrum-web-components/tabs", version = "0.10.7")
+@NpmPackage(value = "@spectrum-web-components/tabs", version = SpConstants.VERSION)
 @JsModule("@spectrum-web-components/tabs/sp-tab-panel.js")
 public class SpTabPanel extends Component implements HasComponents {
 

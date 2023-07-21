@@ -9,7 +9,7 @@ import com.vaadin.flow.component.dependency.NpmPackage;
 import org.vaadin.spectrum.properties.HasTextFluent;
 
 @Tag("sp-sidenav-item")
-@NpmPackage(value = "@spectrum-web-components/sidenav", version = "0.13.9")
+@NpmPackage(value = "@spectrum-web-components/sidenav", version = SpConstants.VERSION)
 @JsModule("@spectrum-web-components/sidenav/sp-sidenav-item.js")
 public class SpSideNavItem extends Component implements HasTextFluent<SpSideNavItem> {
 

@@ -1,7 +1,7 @@
 package org.vaadin.spectrum.builders;
 
 import com.vaadin.flow.component.Component;
-import com.vaadin.flow.component.html.Paragraph;
+import com.vaadin.flow.component.HtmlContainer;
 import org.vaadin.spectrum.SpConstants;
 import org.vaadin.spectrum.properties.HasSizeFluent;
 
@@ -30,8 +30,8 @@ public class ParagraphBuilder {
         return this;
     }
 
-    public Paragraph build() {
-        Paragraph el = new Paragraph();
+    public HtmlContainer build() {
+        HtmlContainer el = new HtmlContainer("p");
         el.getClassNames().add(TAG);
         el.getClassNames().add(TAG + "--size" + (size != null ? size : HasSizeFluent.Size.M));
         if (text != null) {

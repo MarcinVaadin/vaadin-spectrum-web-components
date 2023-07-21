@@ -3,30 +3,18 @@ package org.vaadin.spectrum;
 import com.vaadin.flow.component.*;
 import com.vaadin.flow.component.dependency.JsModule;
 import com.vaadin.flow.component.dependency.NpmPackage;
-import com.vaadin.flow.component.shared.SlotUtils;
+import com.vaadin.flow.shared.Registration;
+import org.vaadin.spectrum.properties.HasDisabledFluent;
 import org.vaadin.spectrum.properties.HasSizeFluent;
 import org.vaadin.spectrum.properties.HasTextFluent;
 import org.vaadin.spectrum.slots.HasIconSlot;
 
-//@Tag("sp-action-button")
-//@NpmPackage(value = "@spectrum-web-components/action-button", version = "0.10.14")
-//@JsModule("@spectrum-web-components/action-button/sp-action-button.js")
-
-/**
- * Failed to initialize WebComponent:
- *
- * Uncaught (in promise) TypeError: (intermediate value).styles is not iterable
- *     at get styles [as styles] (ActionButton.ts:56:26)
- *     at ActionButton.finalize (reactive-element.js:407:1)
- *     at LitElement.finalize (lit-element.js:205:27)
- *     at ActionButton.createProperty (reactive-element.js:283:1)
- *     at legacyProperty (property.js:52:1)
- *     at property.js:89:1
- *     at __decorateClass (sp-icon-corner-triangle300.ts:15:74)
- *     at ActionButton.ts:60:12
- */
+@Tag("sp-action-button")
+@NpmPackage(value = "@spectrum-web-components/action-button", version = SpConstants.VERSION)
+@JsModule("@spectrum-web-components/action-button/sp-action-button.js")
 public class SpActionButton extends Component implements ClickNotifier<SpActionButton>,
-        HasSizeFluent<SpActionButton>, HasTextFluent<SpActionButton>, HasIconSlot<SpActionButton> {
+        HasSizeFluent<SpActionButton>, HasTextFluent<SpActionButton>, HasIconSlot<SpActionButton>,
+        HasDisabledFluent<SpActionButton> {
 
     public enum Type {BUTTON, SUBMIT, RESET}
 
@@ -105,6 +93,7 @@ public class SpActionButton extends Component implements ClickNotifier<SpActionB
         selectedProperty.set(this, _selected);
         return this;
     }
+    @Synchronize("change")
     public boolean isSelected() {
         return selectedProperty.get(this);
     }
@@ -161,5 +150,28 @@ public class SpActionButton extends Component implements ClickNotifier<SpActionB
         return variantProperty.get(this);
     }
     // -----------------
+
+    public SpActionButton setType(Type _type) {
+        assert _type != null;
+        this.setType(_type.name().toLowerCase());
+        return this;
+    }
+
+    public SpActionButton setVariant(Variant _variant) {
+        assert _variant != null;
+        this.setVariant(_variant.name().toLowerCase());
+        return this;
+    }
+
+    public Registration addLongPressEventListener(ComponentEventListener<SpLongPressEvent> listener) {
+        return addListener(SpLongPressEvent.class, listener);
+    }
+
+    @DomEvent("longpress")
+    public static class SpLongPressEvent extends ComponentEvent<SpActionButton> {
+        public SpLongPressEvent(SpActionButton source, boolean fromClient) {
+            super(source, fromClient);
+        }
+    }
 
 }

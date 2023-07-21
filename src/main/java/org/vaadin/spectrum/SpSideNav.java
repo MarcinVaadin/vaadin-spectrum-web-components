@@ -5,7 +5,7 @@ import com.vaadin.flow.component.dependency.JsModule;
 import com.vaadin.flow.component.dependency.NpmPackage;
 
 @Tag("sp-sidenav")
-@NpmPackage(value = "@spectrum-web-components/sidenav", version = "0.13.9")
+@NpmPackage(value = "@spectrum-web-components/sidenav", version = SpConstants.VERSION)
 @JsModule("@spectrum-web-components/sidenav/sp-sidenav.js")
 public class SpSideNav extends HtmlContainer {
 

@@ -10,7 +10,7 @@ import org.vaadin.spectrum.properties.HasDisabledFluent;
 import org.vaadin.spectrum.properties.HasLabelFluent;
 
 @Tag("sp-tab")
-@NpmPackage(value = "@spectrum-web-components/tabs", version = "0.10.7")
+@NpmPackage(value = "@spectrum-web-components/tabs", version = SpConstants.VERSION)
 @JsModule("@spectrum-web-components/tabs/sp-tab.js")
 public class SpTab extends Component implements HasLabelFluent<SpTab>, HasDisabledFluent<SpTab> {
 

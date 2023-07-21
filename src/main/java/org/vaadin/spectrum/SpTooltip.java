@@ -6,13 +6,13 @@ import com.vaadin.flow.component.PropertyDescriptors;
 import com.vaadin.flow.component.Tag;
 import com.vaadin.flow.component.dependency.JsModule;
 import com.vaadin.flow.component.dependency.NpmPackage;
-import com.vaadin.flow.component.shared.SlotUtils;
 import org.vaadin.spectrum.properties.HasDirFluent;
 import org.vaadin.spectrum.properties.HasTextFluent;
 import org.vaadin.spectrum.utils.Placement;
+import org.vaadin.spectrum.utils.SlotUtils;
 
 @Tag("sp-tooltip")
-@NpmPackage(value = "@spectrum-web-components/tooltip", version = "0.11.13")
+@NpmPackage(value = "@spectrum-web-components/tooltip", version = SpConstants.VERSION)
 @JsModule("@spectrum-web-components/tooltip/sp-tooltip.js")
 public class SpTooltip extends Component implements HasDirFluent<SpTooltip>, HasTextFluent<SpTooltip> {
 

@@ -10,7 +10,7 @@ import org.vaadin.spectrum.properties.HasLabelFluent;
  * <a href="https://opensource.adobe.com/spectrum-web-components/components/slider/">sp-slider</a>
  */
 @Tag("sp-slider")
-@NpmPackage(value = "@spectrum-web-components/slider", version = "0.15.7")
+@NpmPackage(value = "@spectrum-web-components/slider", version = SpConstants.VERSION)
 @JsModule("@spectrum-web-components/slider/sp-slider.js")
 public class SpSlider extends AbstractSinglePropertyField<SpSlider, Integer> implements HasSize,
         HasLabelFluent<SpSlider>, HasDisabledFluent<SpSlider> {

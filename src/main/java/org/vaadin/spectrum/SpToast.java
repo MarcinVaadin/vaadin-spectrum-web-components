@@ -11,7 +11,7 @@ import org.vaadin.spectrum.properties.HasTextFluent;
 import org.vaadin.spectrum.properties.HasVariantFluent;
 
 @Tag("sp-toast")
-@NpmPackage(value = "@spectrum-web-components/toast", version = "0.11.12")
+@NpmPackage(value = "@spectrum-web-components/toast", version = SpConstants.VERSION)
 @JsModule("@spectrum-web-components/toast/sp-toast.js")
 public class SpToast extends Component implements HasTextFluent<SpToast>, HasDirFluent<SpToast>, HasVariantFluent<SpToast> {
 

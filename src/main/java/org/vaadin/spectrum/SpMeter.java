@@ -12,7 +12,7 @@ import org.vaadin.spectrum.properties.HasSizeFluent;
 import org.vaadin.spectrum.properties.HasTextFluent;
 
 @Tag("sp-meter")
-@NpmPackage(value = "@spectrum-web-components/meter", version = "0.8.0")
+@NpmPackage(value = "@spectrum-web-components/meter", version = SpConstants.VERSION)
 @JsModule("@spectrum-web-components/meter/sp-meter.js")
 public class SpMeter extends Component implements HasDirFluent<SpMeter>, HasLabelFluent<SpMeter>, HasSizeFluent<SpMeter>, HasTextFluent<SpMeter> {
 

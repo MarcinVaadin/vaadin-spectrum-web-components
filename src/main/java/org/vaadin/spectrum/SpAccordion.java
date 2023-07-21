@@ -1,12 +1,8 @@
 package org.vaadin.spectrum;
 
-import com.vaadin.flow.component.ComponentEventListener;
-import com.vaadin.flow.component.PropertyDescriptor;
-import com.vaadin.flow.component.PropertyDescriptors;
-import com.vaadin.flow.component.Tag;
+import com.vaadin.flow.component.*;
 import com.vaadin.flow.component.dependency.JsModule;
 import com.vaadin.flow.component.dependency.NpmPackage;
-import com.vaadin.flow.component.html.Div;
 import com.vaadin.flow.shared.Registration;
 import org.vaadin.spectrum.properties.HasDirFluent;
 
@@ -14,9 +10,9 @@ import java.util.List;
 import java.util.stream.Stream;
 
 @Tag("sp-accordion")
-@NpmPackage(value = "@spectrum-web-components/accordion", version = "0.7.9")
+@NpmPackage(value = "@spectrum-web-components/accordion", version = SpConstants.VERSION)
 @JsModule("@spectrum-web-components/accordion/sp-accordion.js")
-public class SpAccordion extends Div implements HasDirFluent<SpAccordion>, ComponentEventListener<SpAccordionItem.SpAccordionItemToggleEvent> {
+public class SpAccordion extends Component implements HasComponents, HasDirFluent<SpAccordion>, ComponentEventListener<SpAccordionItem.SpAccordionItemToggleEvent> {
 
     // ----- allowMultiple -----
     private static final PropertyDescriptor<Boolean, Boolean> allowMultipleProperty =
@@ -32,7 +28,7 @@ public class SpAccordion extends Div implements HasDirFluent<SpAccordion>, Compo
     // -----------------
 
     public SpAccordion addItem(SpAccordionItem item) {
-        super.add(item);
+        add(item);
         item.addItemToggleEventListener(this);
         return this;
     }
@@ -67,12 +63,26 @@ public class SpAccordion extends Div implements HasDirFluent<SpAccordion>, Compo
                 .map(SpAccordionItem.class::cast);
     }
 
-    public Registration addItemToggleEventListener(ComponentEventListener<SpAccordionItem.SpAccordionItemToggleEvent> listener) {
-        return addListener(SpAccordionItem.SpAccordionItemToggleEvent.class, listener);
+    public Registration addToggleEventListener(ComponentEventListener<SpAccordionToggleEvent> listener) {
+        return addListener(SpAccordionToggleEvent.class, listener);
     }
 
     @Override
     public void onComponentEvent(SpAccordionItem.SpAccordionItemToggleEvent spAccordionItemToggleEvent) {
-        this.fireEvent(spAccordionItemToggleEvent);
+        this.fireEvent(new SpAccordionToggleEvent(this, spAccordionItemToggleEvent.isFromClient(), spAccordionItemToggleEvent.getSource()));
+    }
+
+    public static class SpAccordionToggleEvent extends ComponentEvent<SpAccordion> {
+
+        private SpAccordionItem toggledItem;
+
+        public SpAccordionToggleEvent(SpAccordion source, boolean fromClient, SpAccordionItem toggledItem) {
+            super(source, fromClient);
+            this.toggledItem = toggledItem;
+        }
+
+        public SpAccordionItem getToggledItem() {
+            return toggledItem;
+        }
     }
 }

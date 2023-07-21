@@ -1,19 +1,13 @@
 package org.vaadin.spectrum;
 
-import com.vaadin.flow.component.Component;
-import com.vaadin.flow.component.ComponentEvent;
-import com.vaadin.flow.component.ComponentEventListener;
-import com.vaadin.flow.component.DomEvent;
-import com.vaadin.flow.component.PropertyDescriptor;
-import com.vaadin.flow.component.PropertyDescriptors;
-import com.vaadin.flow.component.Tag;
+import com.vaadin.flow.component.*;
 import com.vaadin.flow.component.dependency.JsModule;
 import com.vaadin.flow.component.dependency.NpmPackage;
 import com.vaadin.flow.shared.Registration;
 import org.vaadin.spectrum.properties.HasDirFluent;
 
 @Tag("sp-dialog-base")
-@NpmPackage(value = "@spectrum-web-components/dialog", version = "0.11.13")
+@NpmPackage(value = "@spectrum-web-components/dialog", version = SpConstants.VERSION)
 @JsModule("@spectrum-web-components/dialog/sp-dialog-base.js")
 public class SpDialogBase extends Component implements HasDirFluent<SpDialogBase> {
 

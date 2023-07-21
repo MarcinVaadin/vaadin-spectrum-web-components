@@ -7,7 +7,7 @@ import com.vaadin.flow.component.dependency.NpmPackage;
 import org.vaadin.spectrum.properties.HasDirFluent;
 
 @Tag("sp-theme")
-@NpmPackage(value = "@spectrum-web-components/theme", version = "0.14.11")
+@NpmPackage(value = "@spectrum-web-components/theme", version = SpConstants.VERSION)
 @JsModule("@spectrum-web-components/theme/sp-theme.js")
 @JavaScript("@spectrum-web-components/theme/src/themes.js")
 public class SpTheme extends Component implements HasComponents, HasSize, HasDirFluent<SpTheme> {

@@ -6,7 +6,7 @@ import com.vaadin.flow.component.dependency.NpmPackage;
 import org.vaadin.spectrum.properties.HasLabelFluent;
 
 @Tag("sp-avatar")
-@NpmPackage(value = "@spectrum-web-components/avatar", version = "0.11.0")
+@NpmPackage(value = "@spectrum-web-components/avatar", version = SpConstants.VERSION)
 @JsModule("@spectrum-web-components/avatar/sp-avatar.js")
 public class SpAvatar extends Component implements HasLabelFluent<SpAvatar>, HasStyle {
 

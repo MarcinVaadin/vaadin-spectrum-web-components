@@ -1,10 +1,6 @@
 package org.vaadin.spectrum;
 
-import com.vaadin.flow.component.Component;
-import com.vaadin.flow.component.HasStyle;
-import com.vaadin.flow.component.PropertyDescriptor;
-import com.vaadin.flow.component.PropertyDescriptors;
-import com.vaadin.flow.component.Tag;
+import com.vaadin.flow.component.*;
 import com.vaadin.flow.component.dependency.JsModule;
 import com.vaadin.flow.component.dependency.NpmPackage;
 import org.vaadin.spectrum.properties.HasDirFluent;
@@ -12,7 +8,7 @@ import org.vaadin.spectrum.properties.HasLabelFluent;
 import org.vaadin.spectrum.properties.HasSizeFluent;
 
 @Tag("sp-icon")
-@NpmPackage(value = "@spectrum-web-components/icon", version = "0.12.8")
+@NpmPackage(value = "@spectrum-web-components/icon", version = SpConstants.VERSION)
 @JsModule("@spectrum-web-components/icon/sp-icon.js")
 public class SpIcon extends Component implements HasDirFluent<SpIcon>, HasLabelFluent<SpIcon>, HasSizeFluent<SpIcon>, HasStyle {
 

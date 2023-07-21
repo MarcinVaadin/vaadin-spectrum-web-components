@@ -10,7 +10,7 @@ import org.vaadin.spectrum.properties.HasDisabledFluent;
 import org.vaadin.spectrum.properties.HasTextFluent;
 
 @Tag("sp-tag")
-@NpmPackage(value = "@spectrum-web-components/tags", version = "0.10.4")
+@NpmPackage(value = "@spectrum-web-components/tags", version = SpConstants.VERSION)
 @JsModule("@spectrum-web-components/tags/sp-tag.js")
 public class SpTag extends Component implements HasTextFluent<SpTag>, HasDisabledFluent<SpTag> {
 

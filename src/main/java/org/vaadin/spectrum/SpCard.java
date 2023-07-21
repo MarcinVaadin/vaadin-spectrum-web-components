@@ -3,14 +3,14 @@ package org.vaadin.spectrum;
 import com.vaadin.flow.component.*;
 import com.vaadin.flow.component.dependency.JsModule;
 import com.vaadin.flow.component.dependency.NpmPackage;
-import com.vaadin.flow.component.html.Span;
-import com.vaadin.flow.component.shared.SlotUtils;
 import org.vaadin.spectrum.properties.HasDirFluent;
 import org.vaadin.spectrum.properties.HasSizeFluent;
 import org.vaadin.spectrum.properties.HasVariantFluent;
+import org.vaadin.spectrum.utils.ComponentUtils;
+import org.vaadin.spectrum.utils.SlotUtils;
 
 @Tag("sp-card")
-@NpmPackage(value = "@spectrum-web-components/card", version = "0.14.0")
+@NpmPackage(value = "@spectrum-web-components/card", version = SpConstants.VERSION)
 @JsModule("@spectrum-web-components/card/sp-card.js")
 public class SpCard extends AbstractSinglePropertyField<SpCard, String> implements HasDirFluent, HasVariantFluent, HasSizeFluent {
 
@@ -138,7 +138,7 @@ public class SpCard extends AbstractSinglePropertyField<SpCard, String> implemen
     }
 
     public SpCard setFooter(String footer) {
-        setFooter(new Span(footer));
+        setFooter(ComponentUtils.divWrap(footer));
         return this;
     }
 

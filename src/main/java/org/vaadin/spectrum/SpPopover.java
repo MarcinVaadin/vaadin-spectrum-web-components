@@ -10,7 +10,7 @@ import org.vaadin.spectrum.properties.HasDirFluent;
 import org.vaadin.spectrum.utils.Placement;
 
 @Tag("sp-popover")
-@NpmPackage(value = "@spectrum-web-components/popover", version = "0.12.13")
+@NpmPackage(value = "@spectrum-web-components/popover", version = SpConstants.VERSION)
 @JsModule("@spectrum-web-components/popover/sp-popover.js")
 public class SpPopover extends HtmlContainer implements HasDirFluent<SpPopover> {
 

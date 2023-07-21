@@ -1,13 +1,16 @@
 package org.vaadin.spectrum;
 
-import com.vaadin.flow.component.*;
+import com.vaadin.flow.component.Component;
+import com.vaadin.flow.component.PropertyDescriptor;
+import com.vaadin.flow.component.PropertyDescriptors;
+import com.vaadin.flow.component.Tag;
 import com.vaadin.flow.component.dependency.JsModule;
 import com.vaadin.flow.component.dependency.NpmPackage;
 import org.vaadin.spectrum.properties.HasDirFluent;
 import org.vaadin.spectrum.properties.HasVariantFluent;
 
 @Tag("sp-coachmark")
-@NpmPackage(value = "@spectrum-web-components/coachmark", version = "0.10.6")
+@NpmPackage(value = "@spectrum-web-components/coachmark", version = SpConstants.VERSION)
 @JsModule("@spectrum-web-components/coachmark/sp-coachmark.js")
 public class SpCoachmark extends Component implements HasDirFluent, HasVariantFluent {
 

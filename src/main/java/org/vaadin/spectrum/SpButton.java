@@ -11,7 +11,7 @@ import org.vaadin.spectrum.properties.HasTextFluent;
  * <a href="https://opensource.adobe.com/spectrum-web-components/components/button/">sp-button</a>
  */
 @Tag("sp-button")
-@NpmPackage(value = "@spectrum-web-components/button", version = "0.20.1")
+@NpmPackage(value = "@spectrum-web-components/button", version = SpConstants.VERSION)
 @JsModule("@spectrum-web-components/button/sp-button.js")
 public class SpButton extends Component implements ClickNotifier<SpButton>,
         HasTextFluent<SpButton>, HasSizeFluent<SpButton>, HasDisabledFluent<SpButton> {

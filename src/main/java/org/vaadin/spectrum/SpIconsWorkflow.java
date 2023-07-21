@@ -1,0 +1,1805 @@
+package org.vaadin.spectrum;
+
+import com.vaadin.flow.component.Component;
+import com.vaadin.flow.component.dependency.JsModule;
+import com.vaadin.flow.component.dependency.NpmPackage;
+import com.vaadin.flow.dom.Element;
+
+@NpmPackage(value = "@spectrum-web-components/icons-workflow", version = SpConstants.VERSION)
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-abc.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-aemscreens.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-actions.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-add.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-add-circle.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-add-to.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-add-to-selection.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-airplane.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-alert.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-alert-add.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-alert-check.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-alert-circle.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-alert-circle-filled.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-algorithm.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-alias.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-align-bottom.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-align-center.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-align-left.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-align-middle.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-align-right.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-align-top.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-amusementpark.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-anchor.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-anchor-select.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-annotate.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-annotate-pen.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-answer.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-answer-favorite.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-app.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-app-refresh.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-apple-files.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-application-delivery.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-approve-reject.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-apps.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-archive.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-archive-remove.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-arrow-down.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-arrow-left.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-arrow-right.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-arrow-up.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-arrow-up-right.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-artboard.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-article.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-asset.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-asset-check.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-assets-added.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-assets-downloaded.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-assets-expired.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-assets-linked-published.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-assets-modified.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-assets-published.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-asterisk.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-at.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-attach.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-attachment-exclude.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-attributes.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-audio.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-automated-segment.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-back.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-back30-seconds.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-back-android.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-beaker.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-beaker-check.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-beaker-share.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-bell.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-bid-rule.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-bid-rule-add.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-blower.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-blur.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-book.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-bookmark.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-bookmark-single.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-bookmark-single-outline.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-bookmark-small.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-bookmark-small-outline.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-boolean.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-border.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-box.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-box-add.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-box-export.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-box-import.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-brackets.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-brackets-square.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-branch1.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-branch2.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-branch3.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-branch-circle.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-breadcrumb-navigation.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-breakdown.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-breakdown-add.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-briefcase.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-browse.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-brush.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-bug.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-building.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-bulk-edit-users.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-button.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-cclibrary.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-calculator.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-calendar.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-calendar-add.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-calendar-locked.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-calendar-unlocked.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-call-center.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-camera.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-camera-flip.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-camera-refresh.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-campaign.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-campaign-add.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-campaign-close.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-campaign-delete.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-campaign-edit.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-cancel.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-capitals.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-captcha.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-car.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-card.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-channel.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-chat.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-chat-add.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-check-pause.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-checkmark.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-checkmark-circle.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-checkmark-circle-outline.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-chevron-double-left.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-chevron-double-right.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-chevron-down.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-chevron-left.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-chevron-right.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-chevron-up.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-chevron-up-down.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-circle.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-circle-filled.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-classic-grid-view.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-clock.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-clock-check.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-clone-stamp.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-close.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-close-captions.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-close-circle.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-cloud.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-cloud-disconnected.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-cloud-error.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-cloud-outline.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-code.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-collection.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-collection-add.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-collection-add-to.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-collection-check.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-collection-edit.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-collection-exclude.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-collection-link.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-color-fill.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-color-palette.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-color-wheel.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-column-settings.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-column-two-a.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-column-two-b.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-column-two-c.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-comment.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-compare.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-compass.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-condition.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-confidence-four.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-confidence-one.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-confidence-three.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-confidence-two.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-contrast.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-conversion-funnel.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-copy.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-cover-image.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-credit-card.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-crop.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-crop-lightning.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-crop-rotate.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-crosshairs.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-curate.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-cut.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-dashboard.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-data.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-data-add.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-data-book.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-data-check.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-data-correlated.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-data-download.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-data-edit.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-data-mapping.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-data-refresh.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-data-remove.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-data-settings.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-data-unavailable.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-data-upload.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-data-user.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-date.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-date-input.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-deduplication.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-delegate.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-delete.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-delete-outline.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-demographic.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-deselect.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-deselect-circular.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-desktop-and-mobile.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-device-desktop.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-device-laptop.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-device-phone.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-device-phone-refresh.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-device-preview.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-device-rotate-landscape.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-device-rotate-portrait.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-device-t-v.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-device-tablet.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-devices.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-display-advert.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-distribute-bottom-edge.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-distribute-horizontal-center.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-distribute-horizontally.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-distribute-left-edge.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-distribute-right-edge.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-distribute-space-horiz.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-distribute-space-vert.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-distribute-top-edge.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-distribute-vertical-center.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-distribute-vertically.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-divide.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-divide-path.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-document.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-document-fragment.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-document-fragment-group.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-document-outline.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-document-refresh.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-dolly.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-download.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-download-from-cloud.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-download-from-cloud-outline.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-draft.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-drag-handle.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-draw.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-dropdown.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-duplicate.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-edit.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-edit-circle.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-edit-exclude.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-edit-in.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-edit-in-light.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-education.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-effects.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-efficient.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-ellipse.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-email.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-email-cancel.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-email-check.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-email-exclude.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-email-exclude-outline.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-email-gear.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-email-gear-outline.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-email-key.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-email-key-outline.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-email-lightning.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-email-notification.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-email-outline.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-email-refresh.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-email-schedule.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-engagement.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-erase.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-event.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-event-exclude.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-event-share.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-events.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-exclude-overlap.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-experience.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-experience-add.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-experience-add-to.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-experience-export.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-experience-import.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-export.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-export-original.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-exposure.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-extension.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-facebook-cover-image.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-fast.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-fast-forward.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-fast-forward-circle.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-feature.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-feed.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-feed-add.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-feed-management.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-feedback.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-file-add.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-file-cs-v.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-file-campaign.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-file-chart.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-file-checked-out.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-file-code.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-file-data.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-file-email.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-file-excel.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-file-folder.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-file-gear.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-file-globe.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-file-htm-l.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-file-important.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-file-json.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-file-key.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-file-mobile.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-file-pd-f.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-file-share.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-file-single-web-page.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-file-space.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-file-template.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-file-txt.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-file-user.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-file-word.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-file-workflow.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-file-xm-l.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-file-zip.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-filing-cabinet.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-filmroll.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-filmroll-auto-add.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-filter.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-filter-add.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-filter-check.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-filter-delete.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-filter-edit.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-filter-heart.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-filter-remove.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-filter-star.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-find-and-replace.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-flag.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-flag-exclude.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-flash-auto.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-flash-off.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-flash-on.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-flashlight.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-flashlight-off.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-flashlight-on.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-flip-horizontal.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-flip-vertical.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-folder.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-folder2-color.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-folder-add.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-folder-add-to.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-folder-archive.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-folder-delete.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-folder-gear.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-folder-locked.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-folder-open.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-folder-open-outline.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-folder-outline.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-folder-remove.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-folder-search.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-folder-user.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-follow.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-follow-off.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-for-placement-only.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-forecast.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-form.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-forward.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-full-screen.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-full-screen-exit.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-function.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-game.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-gauge1.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-gauge2.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-gauge3.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-gauge4.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-gauge5.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-gears.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-gears-add.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-gears-delete.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-gears-edit.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-gender-female.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-gender-male.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-gift.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-globe.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-globe-check.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-globe-clock.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-globe-enter.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-globe-exit.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-globe-grid.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-globe-outline.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-globe-remove.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-globe-search.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-globe-strike.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-globe-strike-clock.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-gradient.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-graph-area.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-graph-area-stacked.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-graph-bar-horizontal.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-graph-bar-horizontal-add.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-graph-bar-horizontal-stacked.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-graph-bar-vertical.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-graph-bar-vertical-add.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-graph-bar-vertical-stacked.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-graph-bubble.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-graph-bullet.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-graph-confidence-bands.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-graph-donut.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-graph-donut-add.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-graph-gantt.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-graph-histogram.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-graph-pathing.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-graph-pie.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-graph-profit-curve.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-graph-scatter.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-graph-stream.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-graph-stream-ranked.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-graph-stream-ranked-add.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-graph-sunburst.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-graph-tree.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-graph-trend.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-graph-trend-add.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-graph-trend-alert.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-graphic.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-group.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-hammer.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-hand.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-hand0.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-hand1.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-hand2.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-hand3.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-hand4.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-heal.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-heart.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-help.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-help-outline.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-histogram.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-history.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-home.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-homepage.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-hot-fixes.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-hotel-bed.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-identity-service.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-image.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-image-add.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-image-album.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-image-auto-mode.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-image-carousel.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-image-check.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-image-checked-out.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-image-map-circle.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-image-map-polygon.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-image-map-rectangle.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-image-next.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-image-profile.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-image-search.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-image-text.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-images.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-import.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-inbox.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-individual.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-info.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-info-outline.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-intersect-overlap.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-invert-adj.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-invite.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-journey.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-journey-action.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-journey-data.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-journey-event.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-journey-event2.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-journey-reports.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-journey-voyager.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-jump-to-top.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-key.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-key-clock.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-key-exclude.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-keyboard.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-label.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-label-exclude.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-labels.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-landscape.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-launch.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-layers.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-layers-backward.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-layers-bring-to-front.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-layers-forward.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-layers-send-to-back.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-light.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-line.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-line-height.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-linear-gradient.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-link.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-link-check.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-link-globe.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-link-nav.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-link-off.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-link-out.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-link-out-light.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-link-page.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-link-user.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-location.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-location-based-date.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-location-based-event.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-location-contribution.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-lock-closed.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-lock-open.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-log-out.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-login.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-looks.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-loupe-view.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-mbox.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-magic-wand.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-magnify.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-mailbox.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-map-view.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-margin-bottom.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-margin-left.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-margin-right.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-margin-top.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-marketing-activities.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-maximize.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-measure.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-menu.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-merge.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-merge-layers.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-messenger.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-minimize.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-mobile-services.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-modern-grid-view.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-money.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-monitoring.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-moon.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-more.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-more-circle.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-more-small.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-more-small-list.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-more-small-list-vert.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-more-vertical.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-move.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-move-left-right.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-move-to.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-move-up-down.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-movie-camera.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-multiple.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-multiple-add.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-multiple-check.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-multiple-exclude.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-naming-order.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-new-item.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-news.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-news-add.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-no-edit.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-note.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-note-add.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-os.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-offer.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-offer-delete.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-on-air.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-open-in.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-open-in-light.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-open-recent.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-open-recent-outline.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-orbit.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-organisations.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-organize.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-outline-path.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-padding-bottom.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-padding-left.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-padding-right.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-padding-top.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-page-break.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-page-exclude.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-page-gear.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-page-rule.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-page-share.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-page-tag.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-pages-exclude.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-pan.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-panel.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-paste.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-paste-htm-l.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-paste-list.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-paste-text.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-pattern.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-pause.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-pause-circle.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-pawn.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-pending.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-people-group.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-personalization-field.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-perspective.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-pin-off.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-pin-on.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-pivot.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-platform-data-mapping.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-play.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-play-circle.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-plug.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-polygon.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-polygon-select.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-pop-in.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-portrait.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-preset.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-preview.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-print.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-print-advert.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-print-preview.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-project.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-project-add.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-project-edit.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-project-name-edit.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-promote.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-properties.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-properties-copy.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-publish-check.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-publish-pending.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-publish-reject.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-publish-remove.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-publish-schedule.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-push-notification.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-question.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-quick-select.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-rss.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-radial-gradient.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-rail.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-rail-bottom.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-rail-left.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-rail-right.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-rail-right-close.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-rail-right-open.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-rail-top.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-range-mask.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-real-time-customer-profile.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-rect-select.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-rectangle.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-redo.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-refresh.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-region-select.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-relevance.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-remove.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-remove-circle.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-rename.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-reorder.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-replay.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-replies.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-reply.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-reply-all.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-report.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-report-add.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-resize.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-retweet.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-reuse.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-revenue.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-revert.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-rewind.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-rewind-circle.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-ribbon.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-rotate-cc-w.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-rotate-ccw-bold.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-rotate-c-w.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-rotate-cw-bold.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-rotate-left.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-rotate-left-outline.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-rotate-right.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-rotate-right-outline.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-sms.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-smskey.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-smslightning.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-smsrefresh.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-sqlquery.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-sampler.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-sandbox.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-save-as-floppy.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-save-floppy.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-save-to.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-save-to-light.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-scribble.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-search.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-seat.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-seat-add.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-segmentation.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-segments.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-select.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-select-add.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-select-box.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-select-box-all.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-select-circular.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-select-container.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-select-gear.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-select-intersect.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-select-subtract.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-selection.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-selection-checked.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-selection-move.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-send.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-sentiment-negative.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-sentiment-neutral.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-sentiment-positive.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-separator.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-servers.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-settings.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-shapes.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-share.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-share-android.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-share-check.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-share-light.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-share-windows.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-sharpen.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-shield.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-ship.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-shop.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-shopping-cart.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-show-all-layers.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-show-menu.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-show-one-layer.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-shuffle.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-slice.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-slow.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-small-caps.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-snapshot.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-social-network.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-sort-order-down.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-sort-order-up.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-spam.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-spellcheck.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-spin.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-split-view.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-spot-heal.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-stadium.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-stage.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-stamp.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-star.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-star-outline.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-starburst.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-step-backward.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-step-backward-circle.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-step-forward.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-step-forward-circle.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-stop.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-stop-circle.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-stopwatch.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-straighten.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-straighten-outline.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-stroke-width.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-subscribe.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-subtract-back-path.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-subtract-from-selection.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-subtract-front-path.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-success-metric.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-summarize.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-survey.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-switch.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-sync.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-sync-remove.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-table.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-table-add.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-table-and-chart.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-table-column-add-left.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-table-column-add-right.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-table-column-merge.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-table-column-remove-center.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-table-column-split.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-table-edit.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-table-histogram.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-table-merge-cells.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-table-row-add-bottom.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-table-row-add-top.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-table-row-merge.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-table-row-remove-center.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-table-row-split.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-table-select-column.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-table-select-row.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-tag-bold.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-tag-italic.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-tag-underline.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-target.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-targeted.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-task-list.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-teapot.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-temperature.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-test-a-b.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-test-ab-edit.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-test-ab-gear.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-test-ab-remove.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-test-profile.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-text.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-text-add.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-text-align-center.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-text-align-justify.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-text-align-left.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-text-align-right.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-text-baseline-shift.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-text-bold.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-text-bulleted.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-text-bulleted-attach.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-text-bulleted-hierarchy.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-text-bulleted-hierarchy-exclude.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-text-color.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-text-decrease.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-text-edit.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-text-exclude.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-text-increase.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-text-indent-decrease.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-text-indent-increase.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-text-italic.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-text-kerning.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-text-lettered-lower-case.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-text-lettered-upper-case.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-text-numbered.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-text-paragraph.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-text-roman-lowercase.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-text-roman-uppercase.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-text-size.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-text-size-add.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-text-space-after.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-text-space-before.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-text-strikethrough.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-text-stroke.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-text-style.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-text-subscript.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-text-superscript.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-text-tracking.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-text-underline.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-thumb-down.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-thumb-down-outline.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-thumb-up.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-thumb-up-outline.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-tips.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-train.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-transfer-to-platform.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-transparency.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-trap.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-tree-collapse.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-tree-collapse-all.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-tree-expand.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-tree-expand-all.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-trend-inspect.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-trim-path.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-trophy.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-type.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-usa.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-underline.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-undo.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-ungroup.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-unlink.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-unmerge.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-upload-to-cloud.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-upload-to-cloud-outline.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-user.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-user-activity.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-user-add.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-user-admin.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-user-arrow.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-user-checked-out.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-user-developer.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-user-edit.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-user-exclude.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-user-group.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-user-lock.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-user-share.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-users-add.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-users-exclude.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-users-lock.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-users-share.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-variable.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-vector-draw.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-video-checked-out.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-video-filled.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-video-outline.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-view-all-tags.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-view-bi-week.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-view-card.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-view-column.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-view-day.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-view-detail.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-view-grid.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-view-list.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-view-row.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-view-single.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-view-stack.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-view-week.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-viewed-mark-as.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-vignette.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-visibility.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-visibility-off.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-visit.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-visit-share.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-voice-over.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-volume-mute.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-volume-one.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-volume-three.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-volume-two.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-watch.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-web-page.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-web-pages.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-workflow.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-workflow-add.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-wrench.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-zoom-in.js")
+@JsModule("@spectrum-web-components/icons-workflow/icons/sp-icon-zoom-out.js")
+public enum SpIconsWorkflow {
+
+    ABC,
+    AEMSCREENS,
+    ACTIONS,
+    ADD,
+    ADD_CIRCLE,
+    ADD_TO,
+    ADD_TO_SELECTION,
+    AIRPLANE,
+    ALERT,
+    ALERT_ADD,
+    ALERT_CHECK,
+    ALERT_CIRCLE,
+    ALERT_CIRCLE_FILLED,
+    ALGORITHM,
+    ALIAS,
+    ALIGN_BOTTOM,
+    ALIGN_CENTER,
+    ALIGN_LEFT,
+    ALIGN_MIDDLE,
+    ALIGN_RIGHT,
+    ALIGN_TOP,
+    AMUSEMENTPARK,
+    ANCHOR,
+    ANCHOR_SELECT,
+    ANNOTATE,
+    ANNOTATE_PEN,
+    ANSWER,
+    ANSWER_FAVORITE,
+    APP,
+    APP_REFRESH,
+    APPLE_FILES,
+    APPLICATION_DELIVERY,
+    APPROVE_REJECT,
+    APPS,
+    ARCHIVE,
+    ARCHIVE_REMOVE,
+    ARROW_DOWN,
+    ARROW_LEFT,
+    ARROW_RIGHT,
+    ARROW_UP,
+    ARROW_UP_RIGHT,
+    ARTBOARD,
+    ARTICLE,
+    ASSET,
+    ASSET_CHECK,
+    ASSETS_ADDED,
+    ASSETS_DOWNLOADED,
+    ASSETS_EXPIRED,
+    ASSETS_LINKED_PUBLISHED,
+    ASSETS_MODIFIED,
+    ASSETS_PUBLISHED,
+    ASTERISK,
+    AT,
+    ATTACH,
+    ATTACHMENT_EXCLUDE,
+    ATTRIBUTES,
+    AUDIO,
+    AUTOMATED_SEGMENT,
+    BACK,
+    BACK30_SECONDS,
+    BACK_ANDROID,
+    BEAKER,
+    BEAKER_CHECK,
+    BEAKER_SHARE,
+    BELL,
+    BID_RULE,
+    BID_RULE_ADD,
+    BLOWER,
+    BLUR,
+    BOOK,
+    BOOKMARK,
+    BOOKMARK_SINGLE,
+    BOOKMARK_SINGLE_OUTLINE,
+    BOOKMARK_SMALL,
+    BOOKMARK_SMALL_OUTLINE,
+    BOOLEAN,
+    BORDER,
+    BOX,
+    BOX_ADD,
+    BOX_EXPORT,
+    BOX_IMPORT,
+    BRACKETS,
+    BRACKETS_SQUARE,
+    BRANCH1,
+    BRANCH2,
+    BRANCH3,
+    BRANCH_CIRCLE,
+    BREADCRUMB_NAVIGATION,
+    BREAKDOWN,
+    BREAKDOWN_ADD,
+    BRIEFCASE,
+    BROWSE,
+    BRUSH,
+    BUG,
+    BUILDING,
+    BULK_EDIT_USERS,
+    BUTTON,
+    CCLIBRARY,
+    CALCULATOR,
+    CALENDAR,
+    CALENDAR_ADD,
+    CALENDAR_LOCKED,
+    CALENDAR_UNLOCKED,
+    CALL_CENTER,
+    CAMERA,
+    CAMERA_FLIP,
+    CAMERA_REFRESH,
+    CAMPAIGN,
+    CAMPAIGN_ADD,
+    CAMPAIGN_CLOSE,
+    CAMPAIGN_DELETE,
+    CAMPAIGN_EDIT,
+    CANCEL,
+    CAPITALS,
+    CAPTCHA,
+    CAR,
+    CARD,
+    CHANNEL,
+    CHAT,
+    CHAT_ADD,
+    CHECK_PAUSE,
+    CHECKMARK,
+    CHECKMARK_CIRCLE,
+    CHECKMARK_CIRCLE_OUTLINE,
+    CHEVRON_DOUBLE_LEFT,
+    CHEVRON_DOUBLE_RIGHT,
+    CHEVRON_DOWN,
+    CHEVRON_LEFT,
+    CHEVRON_RIGHT,
+    CHEVRON_UP,
+    CHEVRON_UP_DOWN,
+    CIRCLE,
+    CIRCLE_FILLED,
+    CLASSIC_GRID_VIEW,
+    CLOCK,
+    CLOCK_CHECK,
+    CLONE_STAMP,
+    CLOSE,
+    CLOSE_CAPTIONS,
+    CLOSE_CIRCLE,
+    CLOUD,
+    CLOUD_DISCONNECTED,
+    CLOUD_ERROR,
+    CLOUD_OUTLINE,
+    CODE,
+    COLLECTION,
+    COLLECTION_ADD,
+    COLLECTION_ADD_TO,
+    COLLECTION_CHECK,
+    COLLECTION_EDIT,
+    COLLECTION_EXCLUDE,
+    COLLECTION_LINK,
+    COLOR_FILL,
+    COLOR_PALETTE,
+    COLOR_WHEEL,
+    COLUMN_SETTINGS,
+    COLUMN_TWO_A,
+    COLUMN_TWO_B,
+    COLUMN_TWO_C,
+    COMMENT,
+    COMPARE,
+    COMPASS,
+    CONDITION,
+    CONFIDENCE_FOUR,
+    CONFIDENCE_ONE,
+    CONFIDENCE_THREE,
+    CONFIDENCE_TWO,
+    CONTRAST,
+    CONVERSION_FUNNEL,
+    COPY,
+    COVER_IMAGE,
+    CREDIT_CARD,
+    CROP,
+    CROP_LIGHTNING,
+    CROP_ROTATE,
+    CROSSHAIRS,
+    CURATE,
+    CUT,
+    DASHBOARD,
+    DATA,
+    DATA_ADD,
+    DATA_BOOK,
+    DATA_CHECK,
+    DATA_CORRELATED,
+    DATA_DOWNLOAD,
+    DATA_EDIT,
+    DATA_MAPPING,
+    DATA_REFRESH,
+    DATA_REMOVE,
+    DATA_SETTINGS,
+    DATA_UNAVAILABLE,
+    DATA_UPLOAD,
+    DATA_USER,
+    DATE,
+    DATE_INPUT,
+    DEDUPLICATION,
+    DELEGATE,
+    DELETE,
+    DELETE_OUTLINE,
+    DEMOGRAPHIC,
+    DESELECT,
+    DESELECT_CIRCULAR,
+    DESKTOP_AND_MOBILE,
+    DEVICE_DESKTOP,
+    DEVICE_LAPTOP,
+    DEVICE_PHONE,
+    DEVICE_PHONE_REFRESH,
+    DEVICE_PREVIEW,
+    DEVICE_ROTATE_LANDSCAPE,
+    DEVICE_ROTATE_PORTRAIT,
+    DEVICE_T_V,
+    DEVICE_TABLET,
+    DEVICES,
+    DISPLAY_ADVERT,
+    DISTRIBUTE_BOTTOM_EDGE,
+    DISTRIBUTE_HORIZONTAL_CENTER,
+    DISTRIBUTE_HORIZONTALLY,
+    DISTRIBUTE_LEFT_EDGE,
+    DISTRIBUTE_RIGHT_EDGE,
+    DISTRIBUTE_SPACE_HORIZ,
+    DISTRIBUTE_SPACE_VERT,
+    DISTRIBUTE_TOP_EDGE,
+    DISTRIBUTE_VERTICAL_CENTER,
+    DISTRIBUTE_VERTICALLY,
+    DIVIDE,
+    DIVIDE_PATH,
+    DOCUMENT,
+    DOCUMENT_FRAGMENT,
+    DOCUMENT_FRAGMENT_GROUP,
+    DOCUMENT_OUTLINE,
+    DOCUMENT_REFRESH,
+    DOLLY,
+    DOWNLOAD,
+    DOWNLOAD_FROM_CLOUD,
+    DOWNLOAD_FROM_CLOUD_OUTLINE,
+    DRAFT,
+    DRAG_HANDLE,
+    DRAW,
+    DROPDOWN,
+    DUPLICATE,
+    EDIT,
+    EDIT_CIRCLE,
+    EDIT_EXCLUDE,
+    EDIT_IN,
+    EDIT_IN_LIGHT,
+    EDUCATION,
+    EFFECTS,
+    EFFICIENT,
+    ELLIPSE,
+    EMAIL,
+    EMAIL_CANCEL,
+    EMAIL_CHECK,
+    EMAIL_EXCLUDE,
+    EMAIL_EXCLUDE_OUTLINE,
+    EMAIL_GEAR,
+    EMAIL_GEAR_OUTLINE,
+    EMAIL_KEY,
+    EMAIL_KEY_OUTLINE,
+    EMAIL_LIGHTNING,
+    EMAIL_NOTIFICATION,
+    EMAIL_OUTLINE,
+    EMAIL_REFRESH,
+    EMAIL_SCHEDULE,
+    ENGAGEMENT,
+    ERASE,
+    EVENT,
+    EVENT_EXCLUDE,
+    EVENT_SHARE,
+    EVENTS,
+    EXCLUDE_OVERLAP,
+    EXPERIENCE,
+    EXPERIENCE_ADD,
+    EXPERIENCE_ADD_TO,
+    EXPERIENCE_EXPORT,
+    EXPERIENCE_IMPORT,
+    EXPORT,
+    EXPORT_ORIGINAL,
+    EXPOSURE,
+    EXTENSION,
+    FACEBOOK_COVER_IMAGE,
+    FAST,
+    FAST_FORWARD,
+    FAST_FORWARD_CIRCLE,
+    FEATURE,
+    FEED,
+    FEED_ADD,
+    FEED_MANAGEMENT,
+    FEEDBACK,
+    FILE_ADD,
+    FILE_CS_V,
+    FILE_CAMPAIGN,
+    FILE_CHART,
+    FILE_CHECKED_OUT,
+    FILE_CODE,
+    FILE_DATA,
+    FILE_EMAIL,
+    FILE_EXCEL,
+    FILE_FOLDER,
+    FILE_GEAR,
+    FILE_GLOBE,
+    FILE_HTM_L,
+    FILE_IMPORTANT,
+    FILE_JSON,
+    FILE_KEY,
+    FILE_MOBILE,
+    FILE_PD_F,
+    FILE_SHARE,
+    FILE_SINGLE_WEB_PAGE,
+    FILE_SPACE,
+    FILE_TEMPLATE,
+    FILE_TXT,
+    FILE_USER,
+    FILE_WORD,
+    FILE_WORKFLOW,
+    FILE_XM_L,
+    FILE_ZIP,
+    FILING_CABINET,
+    FILMROLL,
+    FILMROLL_AUTO_ADD,
+    FILTER,
+    FILTER_ADD,
+    FILTER_CHECK,
+    FILTER_DELETE,
+    FILTER_EDIT,
+    FILTER_HEART,
+    FILTER_REMOVE,
+    FILTER_STAR,
+    FIND_AND_REPLACE,
+    FLAG,
+    FLAG_EXCLUDE,
+    FLASH_AUTO,
+    FLASH_OFF,
+    FLASH_ON,
+    FLASHLIGHT,
+    FLASHLIGHT_OFF,
+    FLASHLIGHT_ON,
+    FLIP_HORIZONTAL,
+    FLIP_VERTICAL,
+    FOLDER,
+    FOLDER2_COLOR,
+    FOLDER_ADD,
+    FOLDER_ADD_TO,
+    FOLDER_ARCHIVE,
+    FOLDER_DELETE,
+    FOLDER_GEAR,
+    FOLDER_LOCKED,
+    FOLDER_OPEN,
+    FOLDER_OPEN_OUTLINE,
+    FOLDER_OUTLINE,
+    FOLDER_REMOVE,
+    FOLDER_SEARCH,
+    FOLDER_USER,
+    FOLLOW,
+    FOLLOW_OFF,
+    FOR_PLACEMENT_ONLY,
+    FORECAST,
+    FORM,
+    FORWARD,
+    FULL_SCREEN,
+    FULL_SCREEN_EXIT,
+    FUNCTION,
+    GAME,
+    GAUGE1,
+    GAUGE2,
+    GAUGE3,
+    GAUGE4,
+    GAUGE5,
+    GEARS,
+    GEARS_ADD,
+    GEARS_DELETE,
+    GEARS_EDIT,
+    GENDER_FEMALE,
+    GENDER_MALE,
+    GIFT,
+    GLOBE,
+    GLOBE_CHECK,
+    GLOBE_CLOCK,
+    GLOBE_ENTER,
+    GLOBE_EXIT,
+    GLOBE_GRID,
+    GLOBE_OUTLINE,
+    GLOBE_REMOVE,
+    GLOBE_SEARCH,
+    GLOBE_STRIKE,
+    GLOBE_STRIKE_CLOCK,
+    GRADIENT,
+    GRAPH_AREA,
+    GRAPH_AREA_STACKED,
+    GRAPH_BAR_HORIZONTAL,
+    GRAPH_BAR_HORIZONTAL_ADD,
+    GRAPH_BAR_HORIZONTAL_STACKED,
+    GRAPH_BAR_VERTICAL,
+    GRAPH_BAR_VERTICAL_ADD,
+    GRAPH_BAR_VERTICAL_STACKED,
+    GRAPH_BUBBLE,
+    GRAPH_BULLET,
+    GRAPH_CONFIDENCE_BANDS,
+    GRAPH_DONUT,
+    GRAPH_DONUT_ADD,
+    GRAPH_GANTT,
+    GRAPH_HISTOGRAM,
+    GRAPH_PATHING,
+    GRAPH_PIE,
+    GRAPH_PROFIT_CURVE,
+    GRAPH_SCATTER,
+    GRAPH_STREAM,
+    GRAPH_STREAM_RANKED,
+    GRAPH_STREAM_RANKED_ADD,
+    GRAPH_SUNBURST,
+    GRAPH_TREE,
+    GRAPH_TREND,
+    GRAPH_TREND_ADD,
+    GRAPH_TREND_ALERT,
+    GRAPHIC,
+    GROUP,
+    HAMMER,
+    HAND,
+    HAND0,
+    HAND1,
+    HAND2,
+    HAND3,
+    HAND4,
+    HEAL,
+    HEART,
+    HELP,
+    HELP_OUTLINE,
+    HISTOGRAM,
+    HISTORY,
+    HOME,
+    HOMEPAGE,
+    HOT_FIXES,
+    HOTEL_BED,
+    IDENTITY_SERVICE,
+    IMAGE,
+    IMAGE_ADD,
+    IMAGE_ALBUM,
+    IMAGE_AUTO_MODE,
+    IMAGE_CAROUSEL,
+    IMAGE_CHECK,
+    IMAGE_CHECKED_OUT,
+    IMAGE_MAP_CIRCLE,
+    IMAGE_MAP_POLYGON,
+    IMAGE_MAP_RECTANGLE,
+    IMAGE_NEXT,
+    IMAGE_PROFILE,
+    IMAGE_SEARCH,
+    IMAGE_TEXT,
+    IMAGES,
+    IMPORT,
+    INBOX,
+    INDIVIDUAL,
+    INFO,
+    INFO_OUTLINE,
+    INTERSECT_OVERLAP,
+    INVERT_ADJ,
+    INVITE,
+    JOURNEY,
+    JOURNEY_ACTION,
+    JOURNEY_DATA,
+    JOURNEY_EVENT,
+    JOURNEY_EVENT2,
+    JOURNEY_REPORTS,
+    JOURNEY_VOYAGER,
+    JUMP_TO_TOP,
+    KEY,
+    KEY_CLOCK,
+    KEY_EXCLUDE,
+    KEYBOARD,
+    LABEL,
+    LABEL_EXCLUDE,
+    LABELS,
+    LANDSCAPE,
+    LAUNCH,
+    LAYERS,
+    LAYERS_BACKWARD,
+    LAYERS_BRING_TO_FRONT,
+    LAYERS_FORWARD,
+    LAYERS_SEND_TO_BACK,
+    LIGHT,
+    LINE,
+    LINE_HEIGHT,
+    LINEAR_GRADIENT,
+    LINK,
+    LINK_CHECK,
+    LINK_GLOBE,
+    LINK_NAV,
+    LINK_OFF,
+    LINK_OUT,
+    LINK_OUT_LIGHT,
+    LINK_PAGE,
+    LINK_USER,
+    LOCATION,
+    LOCATION_BASED_DATE,
+    LOCATION_BASED_EVENT,
+    LOCATION_CONTRIBUTION,
+    LOCK_CLOSED,
+    LOCK_OPEN,
+    LOG_OUT,
+    LOGIN,
+    LOOKS,
+    LOUPE_VIEW,
+    MBOX,
+    MAGIC_WAND,
+    MAGNIFY,
+    MAILBOX,
+    MAP_VIEW,
+    MARGIN_BOTTOM,
+    MARGIN_LEFT,
+    MARGIN_RIGHT,
+    MARGIN_TOP,
+    MARKETING_ACTIVITIES,
+    MAXIMIZE,
+    MEASURE,
+    MENU,
+    MERGE,
+    MERGE_LAYERS,
+    MESSENGER,
+    MINIMIZE,
+    MOBILE_SERVICES,
+    MODERN_GRID_VIEW,
+    MONEY,
+    MONITORING,
+    MOON,
+    MORE,
+    MORE_CIRCLE,
+    MORE_SMALL,
+    MORE_SMALL_LIST,
+    MORE_SMALL_LIST_VERT,
+    MORE_VERTICAL,
+    MOVE,
+    MOVE_LEFT_RIGHT,
+    MOVE_TO,
+    MOVE_UP_DOWN,
+    MOVIE_CAMERA,
+    MULTIPLE,
+    MULTIPLE_ADD,
+    MULTIPLE_CHECK,
+    MULTIPLE_EXCLUDE,
+    NAMING_ORDER,
+    NEW_ITEM,
+    NEWS,
+    NEWS_ADD,
+    NO_EDIT,
+    NOTE,
+    NOTE_ADD,
+    OS,
+    OFFER,
+    OFFER_DELETE,
+    ON_AIR,
+    OPEN_IN,
+    OPEN_IN_LIGHT,
+    OPEN_RECENT,
+    OPEN_RECENT_OUTLINE,
+    ORBIT,
+    ORGANISATIONS,
+    ORGANIZE,
+    OUTLINE_PATH,
+    PADDING_BOTTOM,
+    PADDING_LEFT,
+    PADDING_RIGHT,
+    PADDING_TOP,
+    PAGE_BREAK,
+    PAGE_EXCLUDE,
+    PAGE_GEAR,
+    PAGE_RULE,
+    PAGE_SHARE,
+    PAGE_TAG,
+    PAGES_EXCLUDE,
+    PAN,
+    PANEL,
+    PASTE,
+    PASTE_HTM_L,
+    PASTE_LIST,
+    PASTE_TEXT,
+    PATTERN,
+    PAUSE,
+    PAUSE_CIRCLE,
+    PAWN,
+    PENDING,
+    PEOPLE_GROUP,
+    PERSONALIZATION_FIELD,
+    PERSPECTIVE,
+    PIN_OFF,
+    PIN_ON,
+    PIVOT,
+    PLATFORM_DATA_MAPPING,
+    PLAY,
+    PLAY_CIRCLE,
+    PLUG,
+    POLYGON,
+    POLYGON_SELECT,
+    POP_IN,
+    PORTRAIT,
+    PRESET,
+    PREVIEW,
+    PRINT,
+    PRINT_ADVERT,
+    PRINT_PREVIEW,
+    PROJECT,
+    PROJECT_ADD,
+    PROJECT_EDIT,
+    PROJECT_NAME_EDIT,
+    PROMOTE,
+    PROPERTIES,
+    PROPERTIES_COPY,
+    PUBLISH_CHECK,
+    PUBLISH_PENDING,
+    PUBLISH_REJECT,
+    PUBLISH_REMOVE,
+    PUBLISH_SCHEDULE,
+    PUSH_NOTIFICATION,
+    QUESTION,
+    QUICK_SELECT,
+    RSS,
+    RADIAL_GRADIENT,
+    RAIL,
+    RAIL_BOTTOM,
+    RAIL_LEFT,
+    RAIL_RIGHT,
+    RAIL_RIGHT_CLOSE,
+    RAIL_RIGHT_OPEN,
+    RAIL_TOP,
+    RANGE_MASK,
+    REAL_TIME_CUSTOMER_PROFILE,
+    RECT_SELECT,
+    RECTANGLE,
+    REDO,
+    REFRESH,
+    REGION_SELECT,
+    RELEVANCE,
+    REMOVE,
+    REMOVE_CIRCLE,
+    RENAME,
+    REORDER,
+    REPLAY,
+    REPLIES,
+    REPLY,
+    REPLY_ALL,
+    REPORT,
+    REPORT_ADD,
+    RESIZE,
+    RETWEET,
+    REUSE,
+    REVENUE,
+    REVERT,
+    REWIND,
+    REWIND_CIRCLE,
+    RIBBON,
+    ROTATE_CC_W,
+    ROTATE_CCW_BOLD,
+    ROTATE_C_W,
+    ROTATE_CW_BOLD,
+    ROTATE_LEFT,
+    ROTATE_LEFT_OUTLINE,
+    ROTATE_RIGHT,
+    ROTATE_RIGHT_OUTLINE,
+    SMS,
+    SMSKEY,
+    SMSLIGHTNING,
+    SMSREFRESH,
+    SQLQUERY,
+    SAMPLER,
+    SANDBOX,
+    SAVE_AS_FLOPPY,
+    SAVE_FLOPPY,
+    SAVE_TO,
+    SAVE_TO_LIGHT,
+    SCRIBBLE,
+    SEARCH,
+    SEAT,
+    SEAT_ADD,
+    SEGMENTATION,
+    SEGMENTS,
+    SELECT,
+    SELECT_ADD,
+    SELECT_BOX,
+    SELECT_BOX_ALL,
+    SELECT_CIRCULAR,
+    SELECT_CONTAINER,
+    SELECT_GEAR,
+    SELECT_INTERSECT,
+    SELECT_SUBTRACT,
+    SELECTION,
+    SELECTION_CHECKED,
+    SELECTION_MOVE,
+    SEND,
+    SENTIMENT_NEGATIVE,
+    SENTIMENT_NEUTRAL,
+    SENTIMENT_POSITIVE,
+    SEPARATOR,
+    SERVERS,
+    SETTINGS,
+    SHAPES,
+    SHARE,
+    SHARE_ANDROID,
+    SHARE_CHECK,
+    SHARE_LIGHT,
+    SHARE_WINDOWS,
+    SHARPEN,
+    SHIELD,
+    SHIP,
+    SHOP,
+    SHOPPING_CART,
+    SHOW_ALL_LAYERS,
+    SHOW_MENU,
+    SHOW_ONE_LAYER,
+    SHUFFLE,
+    SLICE,
+    SLOW,
+    SMALL_CAPS,
+    SNAPSHOT,
+    SOCIAL_NETWORK,
+    SORT_ORDER_DOWN,
+    SORT_ORDER_UP,
+    SPAM,
+    SPELLCHECK,
+    SPIN,
+    SPLIT_VIEW,
+    SPOT_HEAL,
+    STADIUM,
+    STAGE,
+    STAMP,
+    STAR,
+    STAR_OUTLINE,
+    STARBURST,
+    STEP_BACKWARD,
+    STEP_BACKWARD_CIRCLE,
+    STEP_FORWARD,
+    STEP_FORWARD_CIRCLE,
+    STOP,
+    STOP_CIRCLE,
+    STOPWATCH,
+    STRAIGHTEN,
+    STRAIGHTEN_OUTLINE,
+    STROKE_WIDTH,
+    SUBSCRIBE,
+    SUBTRACT_BACK_PATH,
+    SUBTRACT_FROM_SELECTION,
+    SUBTRACT_FRONT_PATH,
+    SUCCESS_METRIC,
+    SUMMARIZE,
+    SURVEY,
+    SWITCH,
+    SYNC,
+    SYNC_REMOVE,
+    TABLE,
+    TABLE_ADD,
+    TABLE_AND_CHART,
+    TABLE_COLUMN_ADD_LEFT,
+    TABLE_COLUMN_ADD_RIGHT,
+    TABLE_COLUMN_MERGE,
+    TABLE_COLUMN_REMOVE_CENTER,
+    TABLE_COLUMN_SPLIT,
+    TABLE_EDIT,
+    TABLE_HISTOGRAM,
+    TABLE_MERGE_CELLS,
+    TABLE_ROW_ADD_BOTTOM,
+    TABLE_ROW_ADD_TOP,
+    TABLE_ROW_MERGE,
+    TABLE_ROW_REMOVE_CENTER,
+    TABLE_ROW_SPLIT,
+    TABLE_SELECT_COLUMN,
+    TABLE_SELECT_ROW,
+    TAG_BOLD,
+    TAG_ITALIC,
+    TAG_UNDERLINE,
+    TARGET,
+    TARGETED,
+    TASK_LIST,
+    TEAPOT,
+    TEMPERATURE,
+    TEST_A_B,
+    TEST_AB_EDIT,
+    TEST_AB_GEAR,
+    TEST_AB_REMOVE,
+    TEST_PROFILE,
+    TEXT,
+    TEXT_ADD,
+    TEXT_ALIGN_CENTER,
+    TEXT_ALIGN_JUSTIFY,
+    TEXT_ALIGN_LEFT,
+    TEXT_ALIGN_RIGHT,
+    TEXT_BASELINE_SHIFT,
+    TEXT_BOLD,
+    TEXT_BULLETED,
+    TEXT_BULLETED_ATTACH,
+    TEXT_BULLETED_HIERARCHY,
+    TEXT_BULLETED_HIERARCHY_EXCLUDE,
+    TEXT_COLOR,
+    TEXT_DECREASE,
+    TEXT_EDIT,
+    TEXT_EXCLUDE,
+    TEXT_INCREASE,
+    TEXT_INDENT_DECREASE,
+    TEXT_INDENT_INCREASE,
+    TEXT_ITALIC,
+    TEXT_KERNING,
+    TEXT_LETTERED_LOWER_CASE,
+    TEXT_LETTERED_UPPER_CASE,
+    TEXT_NUMBERED,
+    TEXT_PARAGRAPH,
+    TEXT_ROMAN_LOWERCASE,
+    TEXT_ROMAN_UPPERCASE,
+    TEXT_SIZE,
+    TEXT_SIZE_ADD,
+    TEXT_SPACE_AFTER,
+    TEXT_SPACE_BEFORE,
+    TEXT_STRIKETHROUGH,
+    TEXT_STROKE,
+    TEXT_STYLE,
+    TEXT_SUBSCRIPT,
+    TEXT_SUPERSCRIPT,
+    TEXT_TRACKING,
+    TEXT_UNDERLINE,
+    THUMB_DOWN,
+    THUMB_DOWN_OUTLINE,
+    THUMB_UP,
+    THUMB_UP_OUTLINE,
+    TIPS,
+    TRAIN,
+    TRANSFER_TO_PLATFORM,
+    TRANSPARENCY,
+    TRAP,
+    TREE_COLLAPSE,
+    TREE_COLLAPSE_ALL,
+    TREE_EXPAND,
+    TREE_EXPAND_ALL,
+    TREND_INSPECT,
+    TRIM_PATH,
+    TROPHY,
+    TYPE,
+    USA,
+    UNDERLINE,
+    UNDO,
+    UNGROUP,
+    UNLINK,
+    UNMERGE,
+    UPLOAD_TO_CLOUD,
+    UPLOAD_TO_CLOUD_OUTLINE,
+    USER,
+    USER_ACTIVITY,
+    USER_ADD,
+    USER_ADMIN,
+    USER_ARROW,
+    USER_CHECKED_OUT,
+    USER_DEVELOPER,
+    USER_EDIT,
+    USER_EXCLUDE,
+    USER_GROUP,
+    USER_LOCK,
+    USER_SHARE,
+    USERS_ADD,
+    USERS_EXCLUDE,
+    USERS_LOCK,
+    USERS_SHARE,
+    VARIABLE,
+    VECTOR_DRAW,
+    VIDEO_CHECKED_OUT,
+    VIDEO_FILLED,
+    VIDEO_OUTLINE,
+    VIEW_ALL_TAGS,
+    VIEW_BI_WEEK,
+    VIEW_CARD,
+    VIEW_COLUMN,
+    VIEW_DAY,
+    VIEW_DETAIL,
+    VIEW_GRID,
+    VIEW_LIST,
+    VIEW_ROW,
+    VIEW_SINGLE,
+    VIEW_STACK,
+    VIEW_WEEK,
+    VIEWED_MARK_AS,
+    VIGNETTE,
+    VISIBILITY,
+    VISIBILITY_OFF,
+    VISIT,
+    VISIT_SHARE,
+    VOICE_OVER,
+    VOLUME_MUTE,
+    VOLUME_ONE,
+    VOLUME_THREE,
+    VOLUME_TWO,
+    WATCH,
+    WEB_PAGE,
+    WEB_PAGES,
+    WORKFLOW,
+    WORKFLOW_ADD,
+    WRENCH,
+    ZOOM_IN,
+    ZOOM_OUT;
+
+    SpIconsWorkflow() {
+        tag = "sp-icon-" + name().toLowerCase().replace("_", "-");
+    }
+
+    String tag;
+
+    public Component build() {
+        return new Component(new Element(tag)) {
+        };
+    }
+
+}
